@@ -1,0 +1,36 @@
+{
+  "id": "demo_hunt_2020",
+  "title": "Demo Hunt 2020",
+  "explanation": "This is a show-case demo hunt to show how the app works",
+  "author": "No Author",
+  "is_competitive": false,
+  "lang": "en",
+  "initial_location": {
+    "lon": 27.20292,
+    "lat": 110.0202
+  },
+  "required_age": 7,
+  "time_limit_in_min": 60,
+  "fitness_level": 2,
+  "has_printing_attachments": true,
+  "equipment_description": "For this hunt you will need some shady equipment",
+  "required_equipment": ["Grappling hook", "Shovel"],
+  "stages": [{
+    "title": "Catch the fox!",
+    "description": "A fox has been stealing our most precious food, catch it by any means necessary and bury our food. Once is done, I will tell you the secret code.",
+    "objective": "Bury the food stolen by the fox.",
+    "validation": "input_text",
+
+    "attachments": [{
+      "name": "FoxPhoto",
+      "path": "/attachments/att1.png",
+      "mime_type": "image/png",
+      "is_printable": true
+    }],
+    "time_limit_in_min": 5,
+    "geo_location": {},
+    "clues": ["Fox was last time seen in the Perunantie 2", "It's tale is dirty"],
+
+    "correct_validation_value": "0202-10303"
+  }]
+}

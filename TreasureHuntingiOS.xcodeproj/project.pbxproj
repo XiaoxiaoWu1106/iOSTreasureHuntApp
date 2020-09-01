@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC4734EA24FD87F600857F58 /* demo_hunt.json in Resources */ = {isa = PBXBuildFile; fileRef = BC4734E924FD87F600857F58 /* demo_hunt.json */; };
 		BC65330524F145CE0037B96B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65330424F145CE0037B96B /* AppDelegate.swift */; };
 		BC65330724F145CE0037B96B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65330624F145CE0037B96B /* SceneDelegate.swift */; };
 		BC65330924F145CE0037B96B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65330824F145CE0037B96B /* ViewController.swift */; };
@@ -15,6 +16,12 @@
 		BC65331124F145CF0037B96B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC65330F24F145CF0037B96B /* LaunchScreen.storyboard */; };
 		BC65331C24F145D00037B96B /* TreasureHuntingiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65331B24F145D00037B96B /* TreasureHuntingiOSTests.swift */; };
 		BC65332724F145D00037B96B /* TreasureHuntingiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65332624F145D00037B96B /* TreasureHuntingiOSUITests.swift */; };
+		BC65333624F14CB70037B96B /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65333524F14CB70037B96B /* Attachment.swift */; };
+		BC65333824F14CC30037B96B /* Hunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65333724F14CC30037B96B /* Hunt.swift */; };
+		BC65333A24F14CFB0037B96B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65333924F14CFB0037B96B /* Location.swift */; };
+		BC65333C24F14D070037B96B /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65333B24F14D070037B96B /* Stage.swift */; };
+		BC65333E24F14D170037B96B /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65333D24F14D170037B96B /* Summary.swift */; };
+		BC65334124F14D970037B96B /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65334024F14D970037B96B /* JSONParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC4734E924FD87F600857F58 /* demo_hunt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = demo_hunt.json; sourceTree = "<group>"; };
 		BC65330124F145CE0037B96B /* TreasureHuntingiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHuntingiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC65330424F145CE0037B96B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC65330624F145CE0037B96B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,12 @@
 		BC65332224F145D00037B96B /* TreasureHuntingiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHuntingiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC65332624F145D00037B96B /* TreasureHuntingiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntingiOSUITests.swift; sourceTree = "<group>"; };
 		BC65332824F145D00037B96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC65333524F14CB70037B96B /* Attachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attachment.swift; sourceTree = "<group>"; };
+		BC65333724F14CC30037B96B /* Hunt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hunt.swift; sourceTree = "<group>"; };
+		BC65333924F14CFB0037B96B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		BC65333B24F14D070037B96B /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		BC65333D24F14D170037B96B /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		BC65334024F14D970037B96B /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,9 @@
 		BC65330324F145CE0037B96B /* TreasureHuntingiOS */ = {
 			isa = PBXGroup;
 			children = (
+				BC65334224F158640037B96B /* Supporting Files */,
+				BC65333F24F14D740037B96B /* Database */,
+				BC65333424F14C7F0037B96B /* Model */,
 				BC65330424F145CE0037B96B /* AppDelegate.swift */,
 				BC65330624F145CE0037B96B /* SceneDelegate.swift */,
 				BC65330824F145CE0037B96B /* ViewController.swift */,
@@ -126,6 +143,34 @@
 				BC65332824F145D00037B96B /* Info.plist */,
 			);
 			path = TreasureHuntingiOSUITests;
+			sourceTree = "<group>";
+		};
+		BC65333424F14C7F0037B96B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC65333524F14CB70037B96B /* Attachment.swift */,
+				BC65333724F14CC30037B96B /* Hunt.swift */,
+				BC65333924F14CFB0037B96B /* Location.swift */,
+				BC65333B24F14D070037B96B /* Stage.swift */,
+				BC65333D24F14D170037B96B /* Summary.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC65333F24F14D740037B96B /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				BC65334024F14D970037B96B /* JSONParser.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		BC65334224F158640037B96B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC4734E924FD87F600857F58 /* demo_hunt.json */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC65331124F145CF0037B96B /* LaunchScreen.storyboard in Resources */,
+				BC4734EA24FD87F600857F58 /* demo_hunt.json in Resources */,
 				BC65330E24F145CF0037B96B /* Assets.xcassets in Resources */,
 				BC65330C24F145CE0037B96B /* Main.storyboard in Resources */,
 			);
@@ -259,8 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC65333624F14CB70037B96B /* Attachment.swift in Sources */,
 				BC65330924F145CE0037B96B /* ViewController.swift in Sources */,
+				BC65334124F14D970037B96B /* JSONParser.swift in Sources */,
 				BC65330524F145CE0037B96B /* AppDelegate.swift in Sources */,
+				BC65333C24F14D070037B96B /* Stage.swift in Sources */,
+				BC65333824F14CC30037B96B /* Hunt.swift in Sources */,
+				BC65333A24F14CFB0037B96B /* Location.swift in Sources */,
+				BC65333E24F14D170037B96B /* Summary.swift in Sources */,
 				BC65330724F145CE0037B96B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
