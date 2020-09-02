@@ -9,9 +9,9 @@
 import Foundation
 
 class Location {
-    var lon : Double
-    var lat : Double
-    
+    var lon: Double
+    var lat: Double
+
     init(lon: Double, lat: Double) {
         self.lon = lon
         self.lat = lat

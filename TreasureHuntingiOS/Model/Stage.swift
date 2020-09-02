@@ -9,25 +9,25 @@
 import Foundation
 
 class Stage {
-    
+
     // must have
     var title: String
     var description: String
     var objective: String
     var validation: String
-    
+
     // optional
     var correctValidationValue: String?
     var attachments: [Attachment]?
     var timeLimitInMin: Int?
     var location: Location?
     var clues: [String]?
-    
+
     // THIS FOLLOWING FIELDS ARE FOR COMPLETED ACTIVITY
-    var completionState: String? = nil  // completed/failed,
-    var userTakenPhoto: String? = nil   // “/Path/”
-    var userTextNote: String? = nil
-    
+    var completionState: String?  // completed/failed,
+    var userTakenPhoto: String?   // “/Path/”
+    var userTextNote: String?
+
     init(title: String, description: String, objective: String, validation: String) {
         self.title = title
         self.description = description

@@ -15,6 +15,4 @@ class ViewController: UIViewController {
         JSONParser.init().parseHunt(fileName: "demo_hunt")
     }
 
-
 }
-

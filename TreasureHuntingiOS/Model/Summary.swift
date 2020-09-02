@@ -9,10 +9,9 @@
 import Foundation
 
 class Summary {
-    
-    var timeLimit : String?
-    var isSuccessful : Bool?
-    var status : String? = nil
-    var completedStages: [Stage]? = nil
-    
+
+    var timeLimit: String?
+    var isSuccessful: Bool?
+    var status: String?
+    var completedStages: [Stage]?
 }

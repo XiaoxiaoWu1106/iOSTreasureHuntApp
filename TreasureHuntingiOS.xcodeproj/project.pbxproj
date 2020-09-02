@@ -22,6 +22,7 @@
 		BC65333C24F14D070037B96B /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65333B24F14D070037B96B /* Stage.swift */; };
 		BC65333E24F14D170037B96B /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65333D24F14D170037B96B /* Summary.swift */; };
 		BC65334124F14D970037B96B /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65334024F14D970037B96B /* JSONParser.swift */; };
+		BCF397ED24FFEC8D00F78D1B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF397EC24FFEC8D00F78D1B /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		BC65333B24F14D070037B96B /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
 		BC65333D24F14D170037B96B /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
 		BC65334024F14D970037B96B /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		BCF397EC24FFEC8D00F78D1B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				BC4734E924FD87F600857F58 /* demo_hunt.json */,
+				BCF397EC24FFEC8D00F78D1B /* Logger.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				BC6532FD24F145CE0037B96B /* Sources */,
 				BC6532FE24F145CE0037B96B /* Frameworks */,
 				BC6532FF24F145CE0037B96B /* Resources */,
+				BCF397EB24FFE37900F78D1B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -300,6 +304,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BCF397EB24FFE37900F78D1B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC6532FD24F145CE0037B96B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -310,6 +334,7 @@
 				BC65334124F14D970037B96B /* JSONParser.swift in Sources */,
 				BC65330524F145CE0037B96B /* AppDelegate.swift in Sources */,
 				BC65333C24F14D070037B96B /* Stage.swift in Sources */,
+				BCF397ED24FFEC8D00F78D1B /* Logger.swift in Sources */,
 				BC65333824F14CC30037B96B /* Hunt.swift in Sources */,
 				BC65333A24F14CFB0037B96B /* Location.swift in Sources */,
 				BC65333E24F14D170037B96B /* Summary.swift in Sources */,

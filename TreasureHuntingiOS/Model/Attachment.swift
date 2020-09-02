@@ -9,16 +9,15 @@
 import Foundation
 
 class Attachment {
-    
-    var name : String
-    var path : String
-    var mimeType : String
+    var name: String
+    var path: String
+    var mimeType: String
     var inPrintable: Bool
-    
+
     init(name: String, path: String, mimeType: String, isPrintable: Bool) {
         self.name = name
         self.path = path
         self.mimeType = mimeType
-        self.inPrintable = isPrintable;
+        self.inPrintable = isPrintable
     }
 }
