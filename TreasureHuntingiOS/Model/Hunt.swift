@@ -12,7 +12,8 @@ class Hunt {
     // must have
     var identifier: String
     var title: String
-    var explanation: String
+    var description: String
+    var objective: String
     var author: String
     var lang: String
     var stages: [Stage]
@@ -27,10 +28,11 @@ class Hunt {
     var equipmentDescription: String?
     var requiredEquipment: [String]?
 
-    init(identifier: String, title: String, explanation: String, author: String, lang: String, stages: [Stage]) {
+    init(identifier: String, title: String, description: String, objective: String, author: String, lang: String, stages: [Stage]) {
         self.identifier = identifier
         self.title = title
-        self.explanation = explanation
+        self.description = description
+        self.objective = objective
         self.author = author
         self.lang = lang
         self.stages = stages

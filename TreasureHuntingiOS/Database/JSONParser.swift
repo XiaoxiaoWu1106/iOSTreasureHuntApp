@@ -7,6 +7,7 @@
 //
 
 import Foundation
+typealias JsonObject = [String : Any]
 
 class JSONParser {
     func parseHunt(fileName: String) -> Hunt? {
@@ -19,13 +20,15 @@ class JSONParser {
 
         if let identifier = huntJson["id"] as? String,
             let title = huntJson["title"] as? String,
-            let explanation = huntJson["explanation"] as? String,
+            let description = huntJson["description"] as? String,
+            let objective = huntJson["objective"] as? String,
             let author = huntJson["author"] as? String,
             let lang = huntJson["lang"] as? String,
             let stageArray = huntJson["stages"] as? [[String: Any]] {
             let stages = parseStages(stages: stageArray)
-            hunt = Hunt(identifier: identifier, title: title, explanation: explanation,
-                             author: author, lang: lang, stages: stages)
+            hunt = Hunt(identifier: identifier, title: title, description: description,
+                        objective: objective, author: author, lang: lang, stages: stages)
+            Logger.error("hunt created")
         }
 
         hunt?.isCompatitive = huntJson["is_competitive"] as? Bool ?? false
@@ -45,7 +48,7 @@ class JSONParser {
         if let requiredEquipment = huntJson["required_equipment"] as? [String] {
             hunt?.requiredEquipment = requiredEquipment
         }
-
+        Logger.error(hunt?.title)
         return hunt
     }
 

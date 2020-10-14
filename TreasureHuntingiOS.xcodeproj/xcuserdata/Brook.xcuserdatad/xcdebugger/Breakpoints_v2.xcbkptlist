@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DD5910E1-58A4-4258-9E5F-DA1EC3FDD850"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70536C81-1A50-46AA-83A1-BEA069E19444"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TreasureHuntingiOS/Database/JSONParser.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "parseHunt(fileName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20657030-B98F-4ECA-B9B4-5FD9EF50E077"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TreasureHuntingiOS/Database/JSONParser.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "parseHunt(fileName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94D9EFA5-CD29-4B44-A13D-BE68FE05CFF0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TreasureHuntingiOS/HuntTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F63E0107-A516-4A0B-AE10-DFECD66341F8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TreasureHuntingiOS/Components/InfoBadgeBar/InfoBadgeBar.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "InfoBadgeBar"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F63E0107-A516-4A0B-AE10-DFECD66341F8 - 3f1f1e5560a633d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TreasureHuntingiOS.InfoBadgeBar.thirdIcon.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "TreasureHuntingiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Brook/Desktop/iOS/TreasureHuntingiOS/TreasureHuntingiOS/Components/InfoBadgeBar/InfoBadgeBar.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "F63E0107-A516-4A0B-AE10-DFECD66341F8 - 742c1a11b9b5cfda"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TreasureHuntingiOS.InfoBadgeBar.thirdIcon.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "TreasureHuntingiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Brook/Desktop/iOS/TreasureHuntingiOS/TreasureHuntingiOS/Components/InfoBadgeBar/InfoBadgeBar.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "F63E0107-A516-4A0B-AE10-DFECD66341F8 - 7322ae3587e78939"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TreasureHuntingiOS.InfoBadgeBar.thirdIcon.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "TreasureHuntingiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Brook/Desktop/iOS/TreasureHuntingiOS/TreasureHuntingiOS/Components/InfoBadgeBar/InfoBadgeBar.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "F63E0107-A516-4A0B-AE10-DFECD66341F8 - 33b8b15812f393ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TreasureHuntingiOS.InfoBadgeBar.thirdIcon.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "TreasureHuntingiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Brook/Desktop/iOS/TreasureHuntingiOS/TreasureHuntingiOS/Components/InfoBadgeBar/InfoBadgeBar.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "F63E0107-A516-4A0B-AE10-DFECD66341F8 - bc18e5675f9ae12a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TreasureHuntingiOS.InfoBadgeBar.init(frame: __C.CGRect) -&gt; TreasureHuntingiOS.InfoBadgeBar"
+                  moduleName = "TreasureHuntingiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Brook/Desktop/iOS/TreasureHuntingiOS/TreasureHuntingiOS/Components/InfoBadgeBar/InfoBadgeBar.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "577">
+               </Location>
+               <Location
+                  uuid = "F63E0107-A516-4A0B-AE10-DFECD66341F8 - dd9910ef85d18d43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TreasureHuntingiOS.InfoBadgeBar.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TreasureHuntingiOS.InfoBadgeBar&gt;"
+                  moduleName = "TreasureHuntingiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Brook/Desktop/iOS/TreasureHuntingiOS/TreasureHuntingiOS/Components/InfoBadgeBar/InfoBadgeBar.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "518">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

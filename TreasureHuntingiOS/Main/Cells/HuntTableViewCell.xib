@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="HuntTableViewCell" customModule="TreasureHuntingiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MJ-Bi-xUN">
+                        <rect key="frame" x="10" y="5" width="416" height="88"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4Q-4t-d5v">
+                                <rect key="frame" x="68" y="10" width="338" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jse-o1-xl2">
+                                <rect key="frame" x="10" y="20" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="gal-sO-k1t"/>
+                                    <constraint firstAttribute="width" constant="48" id="sJc-5d-boQ"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hom-Dl-4ax" customClass="InfoBadgeBar" customModule="TreasureHuntingiOS" customModuleProvider="target">
+                                <rect key="frame" x="158" y="54" width="248" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="1sm-Ds-yy6"/>
+                                    <constraint firstAttribute="width" constant="248" id="bm5-o6-gOX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="U4Q-4t-d5v" secondAttribute="trailing" constant="10" id="Ac8-YD-dso"/>
+                            <constraint firstItem="U4Q-4t-d5v" firstAttribute="top" secondItem="7MJ-Bi-xUN" secondAttribute="top" constant="10" id="DEY-wm-s5i"/>
+                            <constraint firstAttribute="trailing" secondItem="Hom-Dl-4ax" secondAttribute="trailing" constant="10" id="KcO-lJ-wM5"/>
+                            <constraint firstItem="Jse-o1-xl2" firstAttribute="leading" secondItem="7MJ-Bi-xUN" secondAttribute="leading" constant="10" id="hKM-xY-A5c"/>
+                            <constraint firstItem="Jse-o1-xl2" firstAttribute="centerY" secondItem="7MJ-Bi-xUN" secondAttribute="centerY" id="lOH-0x-NMB"/>
+                            <constraint firstItem="U4Q-4t-d5v" firstAttribute="leading" secondItem="Jse-o1-xl2" secondAttribute="trailing" constant="10" id="r0p-kH-ofO"/>
+                            <constraint firstAttribute="bottom" secondItem="Hom-Dl-4ax" secondAttribute="bottom" id="thI-hS-YLK"/>
+                            <constraint firstItem="Hom-Dl-4ax" firstAttribute="top" secondItem="U4Q-4t-d5v" secondAttribute="bottom" constant="5" id="thL-nH-vk1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7MJ-Bi-xUN" secondAttribute="trailing" constant="10" id="93L-W1-Rdi"/>
+                    <constraint firstItem="7MJ-Bi-xUN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="HFD-bb-biQ"/>
+                    <constraint firstAttribute="bottom" secondItem="7MJ-Bi-xUN" secondAttribute="bottom" constant="5" id="HXt-OQ-Nny"/>
+                    <constraint firstItem="7MJ-Bi-xUN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="kaw-5B-hfx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellBackground" destination="7MJ-Bi-xUN" id="LXJ-0C-STH"/>
+                <outlet property="huntIcon" destination="Jse-o1-xl2" id="uXl-0R-kB0"/>
+                <outlet property="huntIcons" destination="Hom-Dl-4ax" id="bpB-cC-Kjv"/>
+                <outlet property="huntName" destination="U4Q-4t-d5v" id="kBv-5U-Voe"/>
+            </connections>
+            <point key="canvasLocation" x="221.73913043478262" y="132.58928571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
