@@ -46,7 +46,7 @@
                     <constraint firstAttribute="trailing" secondItem="U4Q-4t-d5v" secondAttribute="trailing" constant="10" id="Sle-K4-tgL"/>
                     <constraint firstItem="U4Q-4t-d5v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="WYD-Es-LXO"/>
                     <constraint firstItem="Jse-o1-xl2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="XC0-29-J3Q"/>
-                    <constraint firstItem="Hom-Dl-4ax" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Jse-o1-xl2" secondAttribute="trailing" constant="10" id="cWK-4j-rg3"/>
+                    <constraint firstItem="Hom-Dl-4ax" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="cWK-4j-rg3"/>
                     <constraint firstItem="Hom-Dl-4ax" firstAttribute="top" secondItem="U4Q-4t-d5v" secondAttribute="bottom" constant="5" id="gpj-xL-YBF"/>
                     <constraint firstItem="U4Q-4t-d5v" firstAttribute="leading" secondItem="Jse-o1-xl2" secondAttribute="trailing" constant="20" id="o34-Ps-LzS"/>
                     <constraint firstItem="Jse-o1-xl2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qNQ-F5-NTx"/>

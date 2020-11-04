@@ -9,25 +9,42 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Hunts-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Hunt Table View Controller-->
+        <scene sceneID="sEL-hb-k19">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HuntTableViewController" customModule="TreasureHuntingiOS" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WEI-0k-olz">
+                <viewController id="XaD-ma-H4F" customClass="HuntTableViewController" customModule="TreasureHuntingiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GJS-vQ-mJD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uzp-QC-FBw">
+                                <rect key="frame" x="15" y="98" width="384" height="754"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XaD-ma-H4F" id="oT5-im-ap3"/>
+                                    <outlet property="delegate" destination="XaD-ma-H4F" id="LxE-qf-4Zk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fcD-pM-Tr4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Hunts" id="ir2-WR-d05">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cMX-ag-c4n"/>
-                    </navigationItem>
+                        <constraints>
+                            <constraint firstItem="fcD-pM-Tr4" firstAttribute="trailing" secondItem="Uzp-QC-FBw" secondAttribute="trailing" constant="15" id="7eS-lf-dSd"/>
+                            <constraint firstItem="fcD-pM-Tr4" firstAttribute="bottom" secondItem="Uzp-QC-FBw" secondAttribute="bottom" constant="10" id="EAF-C8-DAu"/>
+                            <constraint firstItem="Uzp-QC-FBw" firstAttribute="leading" secondItem="fcD-pM-Tr4" secondAttribute="leading" constant="15" id="nap-fO-dch"/>
+                            <constraint firstItem="Uzp-QC-FBw" firstAttribute="top" secondItem="fcD-pM-Tr4" secondAttribute="top" constant="10" id="tT7-Je-kJk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QIc-Hl-n0n"/>
                     <connections>
-                        <segue destination="irq-PZ-FcO" kind="show" identifier="showHuntDetail" id="5p2-rG-T0k"/>
+                        <outlet property="tableView" destination="Uzp-QC-FBw" id="v7F-ge-fLS"/>
+                        <segue destination="irq-PZ-FcO" kind="show" identifier="showHuntDetail" id="xXT-q1-Uw6"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KoN-nb-hNv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
+            <point key="canvasLocation" x="1039" y="144"/>
         </scene>
         <!--Hunt Detail View Controller-->
         <scene sceneID="FNB-vR-3MU">
@@ -91,7 +108,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1zN-6f-yKo"/>
+                        <segue destination="XaD-ma-H4F" kind="relationship" relationship="rootViewController" id="46R-Q2-Vim"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0O2-zA-KfK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

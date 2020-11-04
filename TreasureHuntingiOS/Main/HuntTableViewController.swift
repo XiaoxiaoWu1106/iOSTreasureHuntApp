@@ -8,17 +8,24 @@
 
 import UIKit
 
-class HuntTableViewController: UITableViewController {
+class HuntTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     fileprivate var dataSection: [Hunt] = []
-
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "HuntTableViewCell", bundle: nil),
                            forCellReuseIdentifier: "HuntTableViewCell")
         initData()
-        let tempImageView = UIImageView(image: UIImage(named: "HomeViewTableBackground"))
-        tempImageView.frame = self.tableView.frame
-        self.tableView.backgroundView = tempImageView
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "HomeViewTableBackground")?.draw(in: self.view.bounds)
+
+        if let image = UIGraphicsGetImageFromCurrentImageContext(){
+            UIGraphicsEndImageContext()
+            self.view.backgroundColor = UIColor(patternImage: image)
+        }else{
+            UIGraphicsEndImageContext()
+            debugPrint("Image not available")
+        }
     }
     /*override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
@@ -31,33 +38,41 @@ class HuntTableViewController: UITableViewController {
     }*/
     fileprivate func initData() {
         dataSection.removeAll()
-        dataSection.append(JSONParser.init().parseHunt(fileName: "demo_hunt")!)
+        for _ in 1...20 {
+            dataSection.append(JSONParser.init().parseHunt(fileName: "demo_hunt")!)
+            dataSection.append(JSONParser.init().parseHunt(fileName: "demo_hunt")!)
+            dataSection.append(JSONParser.init().parseHunt(fileName: "demo_hunt")!)
+        }
         tableView.reloadData()
         tableView.hideEmptyCells()
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return dataSection.count
     }
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HuntTableViewCell", for: indexPath)
         if let customCell = cell as? HuntTableViewCell {
             let hunt = dataSection[indexPath.row]
             let rowType = GenericRow(rowType: .huntHeader, userInfo: ["hunt": hunt])
             customCell.configure(rowType)
         }
-
+        // Configure the cell...
+        let maskLayer = CAShapeLayer()
+        let bounds = cell.bounds
+        maskLayer.path = UIBezierPath(roundedRect: CGRect(x: 2, y: 6, width: bounds.width-4, height: bounds.height-12), cornerRadius: 0).cgPath
+        cell.layer.mask = maskLayer
         return cell
     }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         showMasterPlayerDialog(self.navigationController!, viewToAnchor: tableView.cellForRow(at: indexPath)!) {
 
         }

@@ -5,7 +5,7 @@
   "description": "This is a show-case demo hunt to show how the app works",
   "objective": "This is a objective of demo hunt to show how the app works",
   "author": "No Author",
-  "is_competitive": false,
+  "is_competitive": true,
   "lang": "en",
   "initial_location": {
     "lon": 27.20292,
