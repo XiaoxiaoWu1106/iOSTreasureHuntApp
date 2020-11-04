@@ -17,7 +17,7 @@ enum GenericRowType: String {
 class GenericRow {
     let rowType: GenericRowType
     let userInfo: JsonObject
-    
+
     init(rowType: GenericRowType, userInfo: JsonObject = [:] ) {
         self.rowType = rowType
         self.userInfo = userInfo

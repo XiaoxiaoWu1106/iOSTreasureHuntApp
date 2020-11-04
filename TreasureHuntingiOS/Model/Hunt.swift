@@ -28,7 +28,8 @@ class Hunt {
     var equipmentDescription: String?
     var requiredEquipment: [String]?
 
-    init(identifier: String, title: String, description: String, objective: String, author: String, lang: String, stages: [Stage]) {
+    init(identifier: String, title: String, description: String, objective: String, author: String,
+         lang: String, stages: [Stage]) {
         self.identifier = identifier
         self.title = title
         self.description = description

@@ -3,21 +3,20 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoBadgeBar" customModule="TreasureHuntingiOS" customModuleProvider="target">
             <connections>
-                <outlet property="fifthIcon" destination="alK-yI-yDy" id="sDH-qk-dFN"/>
-                <outlet property="firstIcon" destination="Kz4-Xl-FCa" id="n88-Kw-ITd"/>
-                <outlet property="forthIcon" destination="yNW-0C-aGh" id="w45-vN-JnL"/>
-                <outlet property="secondIcon" destination="rZh-WR-Dpm" id="ovj-DS-bAo"/>
-                <outlet property="seventhIcon" destination="XWf-j0-yRF" id="Osr-4C-HgW"/>
-                <outlet property="sixthIcon" destination="5ZF-jU-adx" id="bjX-oP-Bf9"/>
-                <outlet property="thirdIcon" destination="xXa-2m-sHL" id="xS6-Xa-GpK"/>
+                <outlet property="fifthIcon" destination="alK-yI-yDy" id="XI5-8n-7Ch"/>
+                <outlet property="firstIcon" destination="Kz4-Xl-FCa" id="pqT-67-5xW"/>
+                <outlet property="forthIcon" destination="yNW-0C-aGh" id="IV9-JY-hFM"/>
+                <outlet property="secondIcon" destination="rZh-WR-Dpm" id="2m7-ei-Baj"/>
+                <outlet property="seventhIcon" destination="XWf-j0-yRF" id="3zA-Pp-wpb"/>
+                <outlet property="sixthIcon" destination="5ZF-jU-adx" id="4n2-EV-jyl"/>
+                <outlet property="thirdIcon" destination="xXa-2m-sHL" id="FxT-li-SGM"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -83,7 +82,6 @@
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemOrangeColor"/>
             <constraints>
                 <constraint firstItem="rZh-WR-Dpm" firstAttribute="width" secondItem="rZh-WR-Dpm" secondAttribute="height" multiplier="1:1" id="0Kv-dh-ymI"/>
                 <constraint firstItem="Kz4-Xl-FCa" firstAttribute="width" secondItem="Kz4-Xl-FCa" secondAttribute="height" multiplier="1:1" id="18u-or-Vs7"/>
@@ -133,9 +131,4 @@
             <point key="canvasLocation" x="-126.08695652173914" y="-423.88392857142856"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

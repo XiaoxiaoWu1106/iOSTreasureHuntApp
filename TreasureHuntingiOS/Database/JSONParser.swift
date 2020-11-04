@@ -7,7 +7,7 @@
 //
 
 import Foundation
-typealias JsonObject = [String : Any]
+typealias JsonObject = [String: Any]
 
 class JSONParser {
     func parseHunt(fileName: String) -> Hunt? {
@@ -48,7 +48,6 @@ class JSONParser {
         if let requiredEquipment = huntJson["required_equipment"] as? [String] {
             hunt?.requiredEquipment = requiredEquipment
         }
-        Logger.error(hunt?.title)
         return hunt
     }
 

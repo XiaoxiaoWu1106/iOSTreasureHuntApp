@@ -8,7 +8,11 @@
 
 import UIKit
 
+@IBDesignable
 class InfoBadgeBar: UIView {
+
+    var view: UIView!
+
     @IBOutlet weak var firstIcon: UIImageView!
     @IBOutlet weak var secondIcon: UIImageView!
     @IBOutlet weak var thirdIcon: UIImageView!
@@ -16,36 +20,59 @@ class InfoBadgeBar: UIView {
     @IBOutlet weak var fifthIcon: UIImageView!
     @IBOutlet weak var sixthIcon: UIImageView!
     @IBOutlet weak var seventhIcon: UIImageView!
-    
+
     var hunt: Hunt? {
-        didSet{
+        didSet {
             drawHunt()
         }
     }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
+
+    func xibSetup() {
+        view = loadViewFromNib()
+        // use bounds not frame or it'll be offset
+        view.frame = bounds
+        // Make the view stretch with containing view
+        view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
+        // Adding custom subview on top of our view (over any custom drawing > see note below)
+        addSubview(view)
     }
-    
+
+    //swiftlint:disable force_cast
+    func loadViewFromNib() -> UIView {
+        let nib = UINib(nibName: "InfoBadgeBar", bundle: nil)
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+        return view
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        xibSetup()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        xibSetup()
+    }
+
     private func drawHunt() {
         let iconList = [seventhIcon, sixthIcon, fifthIcon, forthIcon, thirdIcon, secondIcon, firstIcon]
-        
+
         let huntIcons = convertHuntToIcons()
-        for (index,iconView) in iconList.enumerated() {
+        for (index, iconView) in iconList.enumerated() {
             let isValidIndex = index < huntIcons.count
             iconView?.image = isValidIndex ? huntIcons[index] : nil
-            //iconView?.isHidden = !isValidIndex
+            iconView?.isHidden = !isValidIndex
         }
     }
-    
+
     private func convertHuntToIcons() -> [UIImage] {
         guard let hunt = self.hunt else { return [] }
         var icons: [UIImage] = []
-        
+
         icons.append(getLanguageIcon(hunt.lang))
         icons.append(getIconByName(getAgeRequirementIconName(hunt.ageRequired)))
         icons.append(getIconByName(getFitnessIconName(hunt.fitnessLevel ?? 0)))
-        
+
         if hunt.location != nil, let icon = UIImage(named: "LocationIcon") {
             icons.append(icon)
         }
@@ -60,7 +87,7 @@ class InfoBadgeBar: UIView {
         }
         return icons
     }
-    
+
     func getAgeRequirementIconName(_ age: Int) -> String {
         switch age {
         case 0...2:
@@ -71,13 +98,13 @@ class InfoBadgeBar: UIView {
             return "Age7Icon"
         case 12...15:
             return "Age12Icon"
-        case 16,17:
+        case 16, 17:
             return "Age16Icon"
         default:
             return "Age18Icon"
         }
     }
-    
+
     func getFitnessIconName(_ level: Int) -> String {
         switch level {
         case 2:
@@ -88,21 +115,39 @@ class InfoBadgeBar: UIView {
             return "FitnessEasyIcon"
         }
     }
-    
+
     func getLanguageIcon(_ lang: String) -> UIImage {
-        return UIImage()
+        return flag(country: "gb").toImage() ?? UIImage()
     }
-    
+
     private func getIconByName(_ name: String) -> UIImage {
         return UIImage(named: name) ?? UIImage()
     }
-    
-    /*func flag(country:String) -> String {
-        let base : UInt32 = 127397
-        var s = ""
-        for v in country.unicodeScalars {
-            s.unicodeScalars.append(UnicodeScalar(base + v.value)!)
+
+    func flag(country: String) -> String {
+        var country = country
+        if !["gb", "us", "es", "fi"].contains(country) {
+            country = "gb"
         }
-        return String(s)
-    }*/
+        let base: UInt32 = 127397
+        var str = ""
+        for vaar in country.uppercased().unicodeScalars {
+            str.unicodeScalars.append(UnicodeScalar(base + vaar.value)!)
+        }
+        return String(str)
+    }
+}
+
+extension String {
+    func toImage() -> UIImage? {
+            let size = CGSize(width: 40, height: 40)
+            UIGraphicsBeginImageContextWithOptions(size, false, 0)
+            UIColor.white.set()
+            let rect = CGRect(origin: .zero, size: size)
+            UIRectFill(CGRect(origin: .zero, size: size))
+            (self as AnyObject).draw(in: rect, withAttributes: [.font: UIFont.systemFont(ofSize: 40)])
+            let image = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            return image
+        }
 }
