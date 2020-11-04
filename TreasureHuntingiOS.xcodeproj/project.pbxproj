@@ -257,8 +257,6 @@
 		BC8BE75E252E0DBD00046018 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				BCA2129225042B7900A7BBF3 /* HuntTableViewCell.swift */,
-				BCA2129325042B7900A7BBF3 /* HuntTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -293,6 +291,8 @@
 			children = (
 				BC8BE76B252E1D6600046018 /* GenericTextCell.swift */,
 				BC8BE76C252E1D6600046018 /* GenericTextCell.xib */,
+				BCA2129225042B7900A7BBF3 /* HuntTableViewCell.swift */,
+				BCA2129325042B7900A7BBF3 /* HuntTableViewCell.xib */,
 			);
 			path = GenericRows;
 			sourceTree = "<group>";

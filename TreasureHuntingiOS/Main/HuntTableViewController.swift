@@ -50,7 +50,9 @@ class HuntTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HuntTableViewCell", for: indexPath)
         if let customCell = cell as? HuntTableViewCell {
-            customCell.configure(dataSection[indexPath.row])
+            let hunt = dataSection[indexPath.row]
+            let rowType = GenericRow(rowType: .huntHeader, userInfo: ["hunt": hunt])
+            customCell.configure(rowType)
         }
 
         return cell

@@ -10,8 +10,9 @@ import Foundation
 import UIKit
 
 //GenericRowType expects the string to be the name of the Row UI xib file
-enum GenericRowType: String {
+enum GenericRowType: String, CaseIterable {
     case text = "GenericTextCell"
+    case huntHeader = "HuntTableViewCell"
 }
 
 class GenericRow {
@@ -28,6 +29,7 @@ class GenericTableRowFactory {
     class func getRow(_ tableView: GenericTableView, genericRow: GenericRow) -> UITableViewCell {
         let identifier = genericRow.rowType.rawValue
         guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? GenericRowCell else {
+            Logger.error("GenericTableRowFactory fails to dequeue reusable cell: did you add it to GenericTableView.registerCell()?")
             return UITableViewCell(frame: .zero)
         }
         cell.configure(genericRow)
@@ -44,8 +46,9 @@ class GenericTableView: UITableView, UITableViewDataSource, UITableViewDelegate 
         registerCells()
     }
     func registerCells() {
-        self.register(UINib(nibName: GenericRowType.text.rawValue, bundle: nil),
-                      forCellReuseIdentifier: GenericRowType.text.rawValue)
+        for rowType in GenericRowType.allCases {
+            self.register(UINib(nibName: rowType.rawValue, bundle: nil), forCellReuseIdentifier: rowType.rawValue)
+        }
     }
     func setData(_ data: [GenericRow]) {
         DispatchQueue.main.async {

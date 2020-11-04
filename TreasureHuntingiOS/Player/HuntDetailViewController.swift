@@ -16,6 +16,7 @@ class HuntDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let header = GenericRow(rowType: .huntHeader, userInfo: ["hunt": huntItem])
         let huntTitle = GenericRow(rowType: .text, userInfo: ["text": huntItem.title, "font-size": CGFloat(20),
                                                               "font-weight": UIFont.Weight.bold])
         let descriptionRow = GenericRow(rowType: .text, userInfo: ["text": huntItem.description,
@@ -26,7 +27,7 @@ class HuntDetailViewController: UIViewController {
         let totalStageRow = GenericRow(rowType: .text, userInfo: ["text": "Total Stage:     \(huntItem.stages.count)",
                                                                   "font-size": CGFloat(20),
                                                                   "font-weight": UIFont.Weight.bold])
-        tableView.setData([huntTitle, descriptionRow, objectiveTitle, objectiveRow, totalStageRow])
+        tableView.setData([header, huntTitle, descriptionRow, objectiveTitle, objectiveRow, totalStageRow])
         tableView.separatorStyle = .none
     }
 
