@@ -60,7 +60,8 @@ class HuntTableViewController: UIViewController, UITableViewDelegate, UITableVie
         // Configure the cell...
         let maskLayer = CAShapeLayer()
         let bounds = cell.bounds
-        maskLayer.path = UIBezierPath(roundedRect: CGRect(x: 2, y: 6, width: bounds.width-4, height: bounds.height-12), cornerRadius: 0).cgPath
+        let rect = CGRect(x: 2, y: 6, width: bounds.width-4, height: bounds.height-12)
+        maskLayer.path = UIBezierPath(roundedRect: rect, cornerRadius: 0).cgPath
         cell.layer.mask = maskLayer
         return cell
     }

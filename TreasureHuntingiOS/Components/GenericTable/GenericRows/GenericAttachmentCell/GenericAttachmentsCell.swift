@@ -14,16 +14,29 @@ class GenericAttachmentsCell: GenericRowCell, UICollectionViewDataSource {
 
     private var attachments: [Attachment] = []
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        collectionView?.dataSource = self
+        collectionView?.register(UINib(nibName: "ImageWithNameCell", bundle: nil),
+                                 forCellWithReuseIdentifier: "ImageWithNameCell")
+    }
+
     override func configure(_ genericRow: GenericRow) {
         self.attachments = genericRow.userInfo["attachments"] as? [Attachment] ?? []
         self.collectionView.reloadData()
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        Logger.debug("Counting cells \(attachments.count)")
         return attachments.count
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageWithNameCell", for: indexPath)
+        if let configCell = cell as? ImageWithNameCell {
+            configCell.config(attachments[indexPath.row])
+        }
+        return cell
     }
 }

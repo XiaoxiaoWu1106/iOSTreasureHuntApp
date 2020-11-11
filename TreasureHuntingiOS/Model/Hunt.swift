@@ -28,6 +28,16 @@ class Hunt {
     var equipmentDescription: String?
     var requiredEquipment: [String]?
 
+    var attachments: [Attachment] {
+        var atts = [Attachment]()
+        for stage in stages {
+            if let stageAtts = stage.attachments {
+                atts.append(contentsOf: stageAtts)
+            }
+        }
+        return atts
+    }
+
     init(identifier: String, title: String, description: String, objective: String, author: String,
          lang: String, stages: [Stage]) {
         self.identifier = identifier
@@ -38,4 +48,5 @@ class Hunt {
         self.lang = lang
         self.stages = stages
     }
+
 }

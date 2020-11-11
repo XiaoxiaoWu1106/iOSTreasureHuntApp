@@ -22,7 +22,7 @@ class ImageWithNameCell: UICollectionViewCell {
         if path.starts(with: "http"), let url = URL(string: path) {
             attachmentImage.loadFrom(url: url)
         } else {
-            //TODO: Load from device path....
+            // Load from path here
         }
     }
 }
