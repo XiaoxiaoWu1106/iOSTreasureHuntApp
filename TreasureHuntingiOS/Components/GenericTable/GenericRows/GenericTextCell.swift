@@ -11,6 +11,12 @@ class GenericRowCell: UITableViewCell {
     func configure(_ genericRow: GenericRow) {
         fatalError("configure is not implemented")
     }
+
+    func configFont(for label: UILabel, dict: JsonObject) {
+        let textSize = dict["font-size"] as? CGFloat ?? 17.0
+        let textWeight = dict["font-weight"] as? UIFont.Weight ?? .regular
+        label.font = UIFont.systemFont(ofSize: textSize, weight: textWeight)
+    }
 }
 
 class GenericTextCell: GenericRowCell {
@@ -18,11 +24,7 @@ class GenericTextCell: GenericRowCell {
 
     override func configure(_ genericRow: GenericRow) {
         self.rowCellLabel.text = genericRow.userInfo["text"] as? String ?? "..."
-
-        let textSize = genericRow.userInfo["font-size"] as? CGFloat ?? 17.0
-        let textWeight = genericRow.userInfo["font-weight"] as? UIFont.Weight ?? .regular
-        self.rowCellLabel.font = UIFont.systemFont(ofSize: textSize, weight: textWeight)
-
+        configFont(for: self.rowCellLabel, dict: genericRow.userInfo)
     }
 
 }

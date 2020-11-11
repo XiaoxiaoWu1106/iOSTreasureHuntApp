@@ -19,23 +19,15 @@ class HuntTableViewController: UIViewController, UITableViewDelegate, UITableVie
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "HomeViewTableBackground")?.draw(in: self.view.bounds)
 
-        if let image = UIGraphicsGetImageFromCurrentImageContext(){
+        if let image = UIGraphicsGetImageFromCurrentImageContext() {
             UIGraphicsEndImageContext()
             self.view.backgroundColor = UIColor(patternImage: image)
-        }else{
+        } else {
             UIGraphicsEndImageContext()
             debugPrint("Image not available")
         }
     }
-    /*override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        super.viewWillAppear(animated)
-    }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-        super.viewWillDisappear(animated)
-    }*/
     fileprivate func initData() {
         dataSection.removeAll()
         for _ in 1...20 {

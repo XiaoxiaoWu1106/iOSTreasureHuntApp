@@ -9,16 +9,17 @@
 import UIKit
 
 class HuntTableViewCell: GenericRowCell {
-    
+
     @IBOutlet weak var huntIcon: UIImageView!
     @IBOutlet weak var huntName: UILabel!
     @IBOutlet weak var huntIcons: InfoBadgeBar!
-    
+
     override func configure(_ genericRow: GenericRow) {
         if let hunt = genericRow.userInfo["hunt"] as? Hunt {
             huntName.text = hunt.title
             huntIcons.hunt = hunt
+            huntIcon.image = UIImage(named: "ImagePlaceholder")
         }
-        
+        configFont(for: self.huntName, dict: genericRow.userInfo)
     }
 }

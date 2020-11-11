@@ -33,6 +33,10 @@
 		BCA212912504293A00A7BBF3 /* HuntTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA212902504293A00A7BBF3 /* HuntTableViewController.swift */; };
 		BCA2129425042B7900A7BBF3 /* HuntTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA2129225042B7900A7BBF3 /* HuntTableViewCell.swift */; };
 		BCA2129525042B7900A7BBF3 /* HuntTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA2129325042B7900A7BBF3 /* HuntTableViewCell.xib */; };
+		BCDD840B255C49830053DCF0 /* GenericAttachmentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD8409255C49830053DCF0 /* GenericAttachmentsCell.swift */; };
+		BCDD840C255C49830053DCF0 /* GenericAttachmentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCDD840A255C49830053DCF0 /* GenericAttachmentsCell.xib */; };
+		BCDD8413255C4A7B0053DCF0 /* ImageWithNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD8411255C4A7B0053DCF0 /* ImageWithNameCell.swift */; };
+		BCDD8414255C4A7B0053DCF0 /* ImageWithNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCDD8412255C4A7B0053DCF0 /* ImageWithNameCell.xib */; };
 		BCF397ED24FFEC8D00F78D1B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF397EC24FFEC8D00F78D1B /* Logger.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +90,10 @@
 		BCA212902504293A00A7BBF3 /* HuntTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntTableViewController.swift; sourceTree = "<group>"; };
 		BCA2129225042B7900A7BBF3 /* HuntTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntTableViewCell.swift; sourceTree = "<group>"; };
 		BCA2129325042B7900A7BBF3 /* HuntTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HuntTableViewCell.xib; sourceTree = "<group>"; };
+		BCDD8409255C49830053DCF0 /* GenericAttachmentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAttachmentsCell.swift; sourceTree = "<group>"; };
+		BCDD840A255C49830053DCF0 /* GenericAttachmentsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericAttachmentsCell.xib; sourceTree = "<group>"; };
+		BCDD8411255C4A7B0053DCF0 /* ImageWithNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithNameCell.swift; sourceTree = "<group>"; };
+		BCDD8412255C4A7B0053DCF0 /* ImageWithNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageWithNameCell.xib; sourceTree = "<group>"; };
 		BCF397EC24FFEC8D00F78D1B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -289,6 +297,7 @@
 		BC8BE76A252E1D3700046018 /* GenericRows */ = {
 			isa = PBXGroup;
 			children = (
+				BCDD8410255C4A500053DCF0 /* GenericAttachmentCell */,
 				BC8BE76B252E1D6600046018 /* GenericTextCell.swift */,
 				BC8BE76C252E1D6600046018 /* GenericTextCell.xib */,
 				BCA2129225042B7900A7BBF3 /* HuntTableViewCell.swift */,
@@ -303,6 +312,17 @@
 				BC4734E924FD87F600857F58 /* demo_hunt.json */,
 			);
 			path = HuntsJson;
+			sourceTree = "<group>";
+		};
+		BCDD8410255C4A500053DCF0 /* GenericAttachmentCell */ = {
+			isa = PBXGroup;
+			children = (
+				BCDD8409255C49830053DCF0 /* GenericAttachmentsCell.swift */,
+				BCDD840A255C49830053DCF0 /* GenericAttachmentsCell.xib */,
+				BCDD8411255C4A7B0053DCF0 /* ImageWithNameCell.swift */,
+				BCDD8412255C4A7B0053DCF0 /* ImageWithNameCell.xib */,
+			);
+			path = GenericAttachmentCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,10 +430,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCDD8414255C4A7B0053DCF0 /* ImageWithNameCell.xib in Resources */,
 				BC8BE76E252E1D6600046018 /* GenericTextCell.xib in Resources */,
 				BC65331124F145CF0037B96B /* LaunchScreen.storyboard in Resources */,
 				BC4734EA24FD87F600857F58 /* demo_hunt.json in Resources */,
 				BC65330E24F145CF0037B96B /* Assets.xcassets in Resources */,
+				BCDD840C255C49830053DCF0 /* GenericAttachmentsCell.xib in Resources */,
 				BCA2129525042B7900A7BBF3 /* HuntTableViewCell.xib in Resources */,
 				BC2E48D525374AE200FA285F /* InfoBadgeBar.xib in Resources */,
 				BC65330C24F145CE0037B96B /* Main.storyboard in Resources */,
@@ -467,12 +489,14 @@
 				BC65333624F14CB70037B96B /* Attachment.swift in Sources */,
 				BC33A1E92524DBE7003AACEF /* HuntManager.swift in Sources */,
 				BC65334124F14D970037B96B /* JSONParser.swift in Sources */,
+				BCDD8413255C4A7B0053DCF0 /* ImageWithNameCell.swift in Sources */,
 				BC65330524F145CE0037B96B /* AppDelegate.swift in Sources */,
 				BC2E48DB25374AFD00FA285F /* InfoBadgeBar.swift in Sources */,
 				BC33A1F12524E303003AACEF /* DatabaseManager.swift in Sources */,
 				BC65333C24F14D070037B96B /* Stage.swift in Sources */,
 				BC8BE757252A6C1300046018 /* HuntDetailViewController.swift in Sources */,
 				BCF397ED24FFEC8D00F78D1B /* Logger.swift in Sources */,
+				BCDD840B255C49830053DCF0 /* GenericAttachmentsCell.swift in Sources */,
 				BC65333824F14CC30037B96B /* Hunt.swift in Sources */,
 				BC65333A24F14CFB0037B96B /* Location.swift in Sources */,
 				BC65333E24F14D170037B96B /* Summary.swift in Sources */,

@@ -6,12 +6,12 @@
   "objective": "This is a objective of demo hunt to show how the app works",
   "author": "No Author",
   "is_competitive": true,
-  "lang": "en",
+  "lang": "fi",
   "initial_location": {
     "lon": 27.20292,
     "lat": 110.0202
   },
-  "required_age": 7,
+  "required_age": 22,
   "time_limit_in_min": 60,
   "fitness_level": 2,
   "has_printing_attachments": true,
@@ -24,11 +24,16 @@
     "validation": "input_text",
 
     "attachments": [{
-      "name": "FoxPhoto",
-      "path": "/attachments/att1.png",
-      "mime_type": "image/png",
+      "name": "Sagrada Familia",
+      "path": "https://fi.wikipedia.org/wiki/Sagrada_Fam%C3%ADlia#/media/Tiedosto:Sagradafamilia-overview.jpg",
+      "mime_type": "image/jpg",
       "is_printable": true
-    }],
+    },{
+        "name": "Camp Nou",
+        "path": "https://fi.wikipedia.org/wiki/Camp_Nou#/media/Tiedosto:Camp_Nou_aerial_(cropped).jpg",
+        "mime_type": "image/jpg",
+        "is_printable": true
+      }],
     "time_limit_in_min": 5,
     "geo_location": {},
     "clues": ["Fox was last time seen in the Perunantie 2", "It's tale is dirty"],

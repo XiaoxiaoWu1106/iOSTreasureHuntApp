@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 class InfoBadgeBar: UIView {
 
     var view: UIView!
@@ -101,23 +100,23 @@ class InfoBadgeBar: UIView {
         case 16, 17:
             return "Age16Icon"
         default:
-            return "Age18Icon"
+            return age < 0 ?  "AgeAllIcon" : "Age18Icon"
         }
     }
 
     func getFitnessIconName(_ level: Int) -> String {
         switch level {
-        case 2:
-            return "FitnessHardIcon"
+        case 0:
+            return "FitnessEasyIcon"
         case 1:
             return "FitnessMediumIcon"
         default:
-            return "FitnessEasyIcon"
+            return level < 0 ? "FitnessEasyIcon" : "FitnessHardIcon"
         }
     }
 
     func getLanguageIcon(_ lang: String) -> UIImage {
-        return flag(country: "gb").toImage() ?? UIImage()
+        return flag(country: lang).toImage() ?? UIImage()
     }
 
     private func getIconByName(_ name: String) -> UIImage {
@@ -125,7 +124,7 @@ class InfoBadgeBar: UIView {
     }
 
     func flag(country: String) -> String {
-        var country = country
+        var country = country.lowercased()
         if !["gb", "us", "es", "fi"].contains(country) {
             country = "gb"
         }

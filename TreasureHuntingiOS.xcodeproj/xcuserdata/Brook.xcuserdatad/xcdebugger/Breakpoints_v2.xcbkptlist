@@ -30,8 +30,8 @@
             filePath = "TreasureHuntingiOS/Components/InfoBadgeBar/InfoBadgeBar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "InfoBadgeBar"
             landmarkType = "3">
             <Locations>
@@ -138,8 +138,8 @@
             filePath = "TreasureHuntingiOS/Components/InfoBadgeBar/InfoBadgeBar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "convertHuntToIcons()"
             landmarkType = "7">
          </BreakpointContent>
@@ -156,7 +156,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
-            landmarkName = "awakeFromNib()"
+            landmarkName = "configure(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
