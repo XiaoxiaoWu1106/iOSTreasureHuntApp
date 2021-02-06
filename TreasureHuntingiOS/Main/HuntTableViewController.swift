@@ -30,11 +30,7 @@ class HuntTableViewController: UIViewController, UITableViewDelegate, UITableVie
 
     fileprivate func initData() {
         dataSection.removeAll()
-        for _ in 1...20 {
-            dataSection.append(JSONParser.init().parseHunt(fileName: "demo_hunt")!)
-            dataSection.append(JSONParser.init().parseHunt(fileName: "demo_hunt")!)
-            dataSection.append(JSONParser.init().parseHunt(fileName: "demo_hunt")!)
-        }
+
         tableView.reloadData()
         tableView.hideEmptyCells()
     }

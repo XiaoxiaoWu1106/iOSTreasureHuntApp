@@ -25,12 +25,12 @@
 
     "attachments": [{
       "name": "Sagrada Familia",
-      "path": "https://fi.wikipedia.org/wiki/Sagrada_Fam%C3%ADlia#/media/Tiedosto:Sagradafamilia-overview.jpg",
+      "path": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sagradafamilia-overview.jpg",
       "mime_type": "image/jpg",
       "is_printable": true
     },{
         "name": "Camp Nou",
-        "path": "https://fi.wikipedia.org/wiki/Camp_Nou#/media/Tiedosto:Camp_Nou_aerial_(cropped).jpg",
+        "path": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Camp_Nou_aerial_%28cropped%29.jpg",
         "mime_type": "image/jpg",
         "is_printable": true
       }],

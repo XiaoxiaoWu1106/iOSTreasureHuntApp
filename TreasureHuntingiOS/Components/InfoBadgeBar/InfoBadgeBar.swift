@@ -68,7 +68,7 @@ class InfoBadgeBar: UIView {
         guard let hunt = self.hunt else { return [] }
         var icons: [UIImage] = []
 
-        icons.append(getLanguageIcon(hunt.lang))
+        icons.append(getLanguageIcon(hunt.localeCode ?? "en"))
         icons.append(getIconByName(getAgeRequirementIconName(hunt.ageRequired)))
         icons.append(getIconByName(getFitnessIconName(hunt.fitnessLevel ?? 0)))
 

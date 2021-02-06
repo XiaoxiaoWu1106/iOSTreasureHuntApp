@@ -20,7 +20,7 @@ class HuntManager {
         self.exporting = exportManager
     }
     func doSomething(hunt: Hunt) {
-        if hunt.identifier == "brook" {
+        if hunt.id == "brook" {
             database.saveHunt(hunt: hunt)
         }
     }

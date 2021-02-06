@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B84251EB0202FA900CEF729 /* Pods_TreasureHuntingiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F3CBAFFD13C039BF1E2B91 /* Pods_TreasureHuntingiOS.framework */; };
+		A253EA8518AD06212E991D39 /* Pods_TreasureHuntingiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B52EA0D52A0BDF3FE27021 /* Pods_TreasureHuntingiOSTests.framework */; };
 		BC2E48D525374AE200FA285F /* InfoBadgeBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2E48D425374AE200FA285F /* InfoBadgeBar.xib */; };
 		BC2E48DB25374AFD00FA285F /* InfoBadgeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2E48DA25374AFD00FA285F /* InfoBadgeBar.swift */; };
 		BC33A1E92524DBE7003AACEF /* HuntManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC33A1E82524DBE7003AACEF /* HuntManager.swift */; };
@@ -33,11 +35,14 @@
 		BCA212912504293A00A7BBF3 /* HuntTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA212902504293A00A7BBF3 /* HuntTableViewController.swift */; };
 		BCA2129425042B7900A7BBF3 /* HuntTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA2129225042B7900A7BBF3 /* HuntTableViewCell.swift */; };
 		BCA2129525042B7900A7BBF3 /* HuntTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCA2129325042B7900A7BBF3 /* HuntTableViewCell.xib */; };
+		BCC6D32925CEEFE2005C8342 /* ContentfulConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC6D32825CEEFE2005C8342 /* ContentfulConfig.swift */; };
+		BCC6D32E25CEF6D9005C8342 /* ContentfulManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC6D32D25CEF6D9005C8342 /* ContentfulManager.swift */; };
 		BCDD840B255C49830053DCF0 /* GenericAttachmentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD8409255C49830053DCF0 /* GenericAttachmentsCell.swift */; };
 		BCDD840C255C49830053DCF0 /* GenericAttachmentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCDD840A255C49830053DCF0 /* GenericAttachmentsCell.xib */; };
 		BCDD8413255C4A7B0053DCF0 /* ImageWithNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD8411255C4A7B0053DCF0 /* ImageWithNameCell.swift */; };
 		BCDD8414255C4A7B0053DCF0 /* ImageWithNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCDD8412255C4A7B0053DCF0 /* ImageWithNameCell.xib */; };
 		BCF397ED24FFEC8D00F78D1B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF397EC24FFEC8D00F78D1B /* Logger.swift */; };
+		C77F45DAF529C7EE0BFFFE55 /* Pods_TreasureHuntingiOS_TreasureHuntingiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3444B0B8436C17DBEBE04D8 /* Pods_TreasureHuntingiOS_TreasureHuntingiOSUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47F3CBAFFD13C039BF1E2B91 /* Pods_TreasureHuntingiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureHuntingiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE1E1AEEDA62BAC2CFAE076 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.release.xcconfig"; path = "Target Support Files/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		567D2B1B87A93319117EA66C /* Pods-TreasureHuntingiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHuntingiOS.release.xcconfig"; path = "Target Support Files/Pods-TreasureHuntingiOS/Pods-TreasureHuntingiOS.release.xcconfig"; sourceTree = "<group>"; };
+		683E95F82A13F0572C41CAD0 /* Pods-TreasureHuntingiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHuntingiOSTests.release.xcconfig"; path = "Target Support Files/Pods-TreasureHuntingiOSTests/Pods-TreasureHuntingiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		A3444B0B8436C17DBEBE04D8 /* Pods_TreasureHuntingiOS_TreasureHuntingiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureHuntingiOS_TreasureHuntingiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE61BCC19A26652FB2B55008 /* Pods-TreasureHuntingiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHuntingiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-TreasureHuntingiOSTests/Pods-TreasureHuntingiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC2E48D425374AE200FA285F /* InfoBadgeBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoBadgeBar.xib; sourceTree = "<group>"; };
 		BC2E48DA25374AFD00FA285F /* InfoBadgeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBadgeBar.swift; sourceTree = "<group>"; };
 		BC33A1E82524DBE7003AACEF /* HuntManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntManager.swift; sourceTree = "<group>"; };
@@ -90,11 +101,16 @@
 		BCA212902504293A00A7BBF3 /* HuntTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntTableViewController.swift; sourceTree = "<group>"; };
 		BCA2129225042B7900A7BBF3 /* HuntTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntTableViewCell.swift; sourceTree = "<group>"; };
 		BCA2129325042B7900A7BBF3 /* HuntTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HuntTableViewCell.xib; sourceTree = "<group>"; };
+		BCC6D32825CEEFE2005C8342 /* ContentfulConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentfulConfig.swift; sourceTree = "<group>"; };
+		BCC6D32D25CEF6D9005C8342 /* ContentfulManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentfulManager.swift; sourceTree = "<group>"; };
 		BCDD8409255C49830053DCF0 /* GenericAttachmentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAttachmentsCell.swift; sourceTree = "<group>"; };
 		BCDD840A255C49830053DCF0 /* GenericAttachmentsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericAttachmentsCell.xib; sourceTree = "<group>"; };
 		BCDD8411255C4A7B0053DCF0 /* ImageWithNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithNameCell.swift; sourceTree = "<group>"; };
 		BCDD8412255C4A7B0053DCF0 /* ImageWithNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageWithNameCell.xib; sourceTree = "<group>"; };
 		BCF397EC24FFEC8D00F78D1B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		C0B52EA0D52A0BDF3FE27021 /* Pods_TreasureHuntingiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureHuntingiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5A63B2FDCC750B41E759219 /* Pods-TreasureHuntingiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHuntingiOS.debug.xcconfig"; path = "Target Support Files/Pods-TreasureHuntingiOS/Pods-TreasureHuntingiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E66A517E642933E7A7804CBE /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B84251EB0202FA900CEF729 /* Pods_TreasureHuntingiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A253EA8518AD06212E991D39 /* Pods_TreasureHuntingiOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,12 +134,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77F45DAF529C7EE0BFFFE55 /* Pods_TreasureHuntingiOS_TreasureHuntingiOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4597B44756E6DC091BB53779 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47F3CBAFFD13C039BF1E2B91 /* Pods_TreasureHuntingiOS.framework */,
+				A3444B0B8436C17DBEBE04D8 /* Pods_TreasureHuntingiOS_TreasureHuntingiOSUITests.framework */,
+				C0B52EA0D52A0BDF3FE27021 /* Pods_TreasureHuntingiOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BC31F70369F3AF7A3C8683C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5A63B2FDCC750B41E759219 /* Pods-TreasureHuntingiOS.debug.xcconfig */,
+				567D2B1B87A93319117EA66C /* Pods-TreasureHuntingiOS.release.xcconfig */,
+				E66A517E642933E7A7804CBE /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.debug.xcconfig */,
+				4CE1E1AEEDA62BAC2CFAE076 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.release.xcconfig */,
+				AE61BCC19A26652FB2B55008 /* Pods-TreasureHuntingiOSTests.debug.xcconfig */,
+				683E95F82A13F0572C41CAD0 /* Pods-TreasureHuntingiOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BC2E48CB2537494600FA285F /* InfoBadgeBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +176,7 @@
 		BC33A1E72524DBBA003AACEF /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				BCC6D32725CEEFBF005C8342 /* Contentful */,
 				BC33A1E82524DBE7003AACEF /* HuntManager.swift */,
 			);
 			path = Managers;
@@ -154,6 +197,8 @@
 				BC65331A24F145D00037B96B /* TreasureHuntingiOSTests */,
 				BC65332524F145D00037B96B /* TreasureHuntingiOSUITests */,
 				BC65330224F145CE0037B96B /* Products */,
+				6BC31F70369F3AF7A3C8683C /* Pods */,
+				4597B44756E6DC091BB53779 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -314,6 +359,15 @@
 			path = HuntsJson;
 			sourceTree = "<group>";
 		};
+		BCC6D32725CEEFBF005C8342 /* Contentful */ = {
+			isa = PBXGroup;
+			children = (
+				BCC6D32825CEEFE2005C8342 /* ContentfulConfig.swift */,
+				BCC6D32D25CEF6D9005C8342 /* ContentfulManager.swift */,
+			);
+			path = Contentful;
+			sourceTree = "<group>";
+		};
 		BCDD8410255C4A500053DCF0 /* GenericAttachmentCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,10 +386,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC65332B24F145D00037B96B /* Build configuration list for PBXNativeTarget "TreasureHuntingiOS" */;
 			buildPhases = (
+				288FB9087CB95381862F8689 /* [CP] Check Pods Manifest.lock */,
 				BC6532FD24F145CE0037B96B /* Sources */,
 				BC6532FE24F145CE0037B96B /* Frameworks */,
 				BC6532FF24F145CE0037B96B /* Resources */,
 				BCF397EB24FFE37900F78D1B /* ShellScript */,
+				62E31C81DD846458A0F5689B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -350,6 +406,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC65332E24F145D00037B96B /* Build configuration list for PBXNativeTarget "TreasureHuntingiOSTests" */;
 			buildPhases = (
+				781FF37846E06C6556500B03 /* [CP] Check Pods Manifest.lock */,
 				BC65331324F145D00037B96B /* Sources */,
 				BC65331424F145D00037B96B /* Frameworks */,
 				BC65331524F145D00037B96B /* Resources */,
@@ -368,9 +425,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC65333124F145D00037B96B /* Build configuration list for PBXNativeTarget "TreasureHuntingiOSUITests" */;
 			buildPhases = (
+				7EFE320B3E1C039F659C6763 /* [CP] Check Pods Manifest.lock */,
 				BC65331E24F145D00037B96B /* Sources */,
 				BC65331F24F145D00037B96B /* Frameworks */,
 				BC65332024F145D00037B96B /* Resources */,
+				6925107B8EAEA6C1B7CEABB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -459,6 +518,106 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		288FB9087CB95381862F8689 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreasureHuntingiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62E31C81DD846458A0F5689B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreasureHuntingiOS/Pods-TreasureHuntingiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreasureHuntingiOS/Pods-TreasureHuntingiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TreasureHuntingiOS/Pods-TreasureHuntingiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6925107B8EAEA6C1B7CEABB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		781FF37846E06C6556500B03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreasureHuntingiOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EFE320B3E1C039F659C6763 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BCF397EB24FFE37900F78D1B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -490,6 +649,7 @@
 				BC33A1E92524DBE7003AACEF /* HuntManager.swift in Sources */,
 				BC65334124F14D970037B96B /* JSONParser.swift in Sources */,
 				BCDD8413255C4A7B0053DCF0 /* ImageWithNameCell.swift in Sources */,
+				BCC6D32925CEEFE2005C8342 /* ContentfulConfig.swift in Sources */,
 				BC65330524F145CE0037B96B /* AppDelegate.swift in Sources */,
 				BC2E48DB25374AFD00FA285F /* InfoBadgeBar.swift in Sources */,
 				BC33A1F12524E303003AACEF /* DatabaseManager.swift in Sources */,
@@ -503,6 +663,7 @@
 				BC65330724F145CE0037B96B /* SceneDelegate.swift in Sources */,
 				BCA212912504293A00A7BBF3 /* HuntTableViewController.swift in Sources */,
 				BC8BE76D252E1D6600046018 /* GenericTextCell.swift in Sources */,
+				BCC6D32E25CEF6D9005C8342 /* ContentfulManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,9 +836,11 @@
 		};
 		BC65332C24F145D00037B96B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A63B2FDCC750B41E759219 /* Pods-TreasureHuntingiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CONTENTFUL_TOKEN = bEJRiW5oX_u1Pj5PYNIyciRwSRy1OLOV72IybPoUyMI;
 				DEVELOPMENT_TEAM = 673FQS38MA;
 				INFOPLIST_FILE = TreasureHuntingiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -693,9 +856,11 @@
 		};
 		BC65332D24F145D00037B96B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 567D2B1B87A93319117EA66C /* Pods-TreasureHuntingiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CONTENTFUL_TOKEN = "0LPhDPS12ZTrQ1ec-rM0P1nLv9ZCINNUAwPiUHA3EIs";
 				DEVELOPMENT_TEAM = 673FQS38MA;
 				INFOPLIST_FILE = TreasureHuntingiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -711,6 +876,7 @@
 		};
 		BC65332F24F145D00037B96B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE61BCC19A26652FB2B55008 /* Pods-TreasureHuntingiOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -733,6 +899,7 @@
 		};
 		BC65333024F145D00037B96B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 683E95F82A13F0572C41CAD0 /* Pods-TreasureHuntingiOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -755,6 +922,7 @@
 		};
 		BC65333224F145D00037B96B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E66A517E642933E7A7804CBE /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -775,6 +943,7 @@
 		};
 		BC65333324F145D00037B96B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CE1E1AEEDA62BAC2CFAE076 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

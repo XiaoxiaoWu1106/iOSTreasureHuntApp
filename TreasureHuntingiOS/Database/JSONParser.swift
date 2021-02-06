@@ -26,8 +26,9 @@ class JSONParser {
             let lang = huntJson["lang"] as? String,
             let stageArray = huntJson["stages"] as? [[String: Any]] {
             let stages = parseStages(stages: stageArray)
-            hunt = Hunt(identifier: identifier, title: title, description: description,
-                        objective: objective, author: author, lang: lang, stages: stages)
+//            hunt = Hunt(identifier: identifier, title: title, description: description,
+//                        objective: objective, author: author, lang: lang, stages: stages)
+
             Logger.error("hunt created")
         }
 
@@ -61,32 +62,7 @@ class JSONParser {
     }
 
     func parseStages(stages: [[String: Any]]) -> [Stage] {
-        var stageArray: [Stage] = []
-        for stage in stages {
-            if let title = stage["title"] as? String,
-                let description = stage["description"] as? String,
-                let objective = stage["objective"] as? String,
-                let validation = stage["validation"] as? String {
-                let newStage = Stage(title: title, description: description,
-                                          objective: objective, validation: validation)
-
-                if let correctValidationValue = stage["correct_validation_value"] as? String {
-                    newStage.correctValidationValue = correctValidationValue
-                }
-                if let attachmentArray = stage["attachments"] as? [[String: Any]] {
-                    let attachments = parseAttachments(attachments: attachmentArray)
-                    newStage.attachments = attachments
-                }
-                if let timeLimitInMin = stage["time_limit_in_min"] as? Int {
-                    newStage.timeLimitInMin = timeLimitInMin
-                }
-                if let clues = stage["clues"] as? [String] {
-                    newStage.clues = clues
-                }
-                stageArray.append(newStage)
-            }
-        }
-        return stageArray
+        return []
     }
 
     func parseAttachments(attachments: [[String: Any]]) -> [Attachment] {

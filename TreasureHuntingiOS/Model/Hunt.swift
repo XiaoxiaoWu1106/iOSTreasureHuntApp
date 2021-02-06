@@ -7,16 +7,28 @@
 //
 
 import Foundation
+import Contentful
 
-class Hunt {
+final class Hunt: EntryDecodable, FieldKeysQueryable {
+    static var contentTypeId: ContentTypeId {
+        return "hunt"
+    }
+    enum FieldKeys: String, CodingKey {
+        case title, description, objective, author, stages
+        case isCompetitive, initialLocation, requiredAge, timeLimitInMin
+        case fitnessLevel, equipmentDescription, requiredEquipment
+    }
+
     // must have
-    var identifier: String
+    var id: String
+    var updatedAt: Date?
+    var createdAt: Date?
+    var localeCode: String?
     var title: String
     var description: String
     var objective: String
     var author: String
-    var lang: String
-    var stages: [Stage]
+    var stages: [Stage] = []
 
     // optional
     var isCompatitive: Bool = false
@@ -38,15 +50,29 @@ class Hunt {
         return atts
     }
 
-    init(identifier: String, title: String, description: String, objective: String, author: String,
-         lang: String, stages: [Stage]) {
-        self.identifier = identifier
-        self.title = title
-        self.description = description
-        self.objective = objective
-        self.author = author
-        self.lang = lang
-        self.stages = stages
+    public required init(from decoder: Decoder) throws {
+        let sys         = try decoder.sys()
+        id              = sys.id
+        localeCode      = sys.locale
+        updatedAt       = sys.updatedAt
+        createdAt       = sys.createdAt
+
+        let fields = try decoder.contentfulFieldsContainer(keyedBy: Hunt.FieldKeys.self)
+
+        self.title                 = try fields.decodeIfPresent(String.self, forKey: .title) ?? ""
+        self.description           = try fields.decodeIfPresent(String.self, forKey: .description) ?? ""
+        self.objective             = try fields.decodeIfPresent(String.self, forKey: .objective) ?? ""
+        self.author                = try fields.decodeIfPresent(String.self, forKey: .author) ?? ""
+        self.isCompatitive         = try fields.decodeIfPresent(Bool.self, forKey: .isCompetitive) ?? false
+        self.ageRequired           = try fields.decodeIfPresent(Int.self, forKey: .requiredAge) ?? 0
+        self.timeLimitInMin        = try fields.decodeIfPresent(Int.self, forKey: .timeLimitInMin) ?? 0
+        self.fitnessLevel          = try fields.decodeIfPresent(Int.self, forKey: .fitnessLevel) ?? 0
+        self.equipmentDescription  = try fields.decodeIfPresent(String.self, forKey: .equipmentDescription) ?? ""
+        self.requiredEquipment     = try fields.decodeIfPresent(Array<String>.self, forKey: .requiredEquipment) ?? []
+        try fields.resolveLinksArray(forKey: .stages, decoder: decoder) { [weak self]
+                stages in
+            self?.stages = stages as? [Stage] ?? []
+        }
     }
 
 }
