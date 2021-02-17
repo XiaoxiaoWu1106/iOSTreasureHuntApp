@@ -28,7 +28,7 @@ class ContentfulConfig {
     }
 
     static var contentTypes: [EntryDecodable.Type] {
-        return [Hunt.self, Stage.self]
+        return [Hunt.self, Stage.self, Attachment.self]
     }
 }
 

@@ -1,0 +1,1093 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C1E90A06DF952793BF984CF6FEE5B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		165A69FCC84B62531CDAE3AAF1C10BFD /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D63B59A0E0E855C103CA53A864D6139 /* Decodable.swift */; };
+		16878C242D620BC5A9778DFC1413B1A8 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038F09452A6C18EF264BE94864259A8 /* Link.swift */; };
+		187064D913229C31858196C89E0741C9 /* Client+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE26D4632DE17ACD87CAF776EB3D1A5 /* Client+UIKit.swift */; };
+		206DCC8FB4F8F8A2EF147AAAB3A4E59D /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2181A69F9814341718E6E0DF4EB0FD4E /* Space.swift */; };
+		208999C6908BEFA28E04931D549FB3B4 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EF189AA9FE60BF8D0772991241FAC /* Locale.swift */; };
+		2C24C69D58042739B4678AA1D1C7D84D /* ImageOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0E6624A913BCE309B11AAFA41C5D9B /* ImageOptions.swift */; };
+		331CEE9F092F3E07CA71A2E82B6E19EF /* Pods-TreasureHuntingiOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A3B2C1CDCFC21F18909A70268646A37 /* Pods-TreasureHuntingiOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35C62640473E94D1CEBEF6F68C4718D2 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F160C5D6D1B7F3221BA3653A8761CC3 /* Endpoints.swift */; };
+		3774874F5E0720743FE2F9EFC6242804 /* Sys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161D6BE1E7959FB75E8135FF04641AD /* Sys.swift */; };
+		38127240F89F0CC015E7EF32836F5735 /* Pods-TreasureHuntingiOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8406BAB5183ADF50187858235C6BD8D0 /* Pods-TreasureHuntingiOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38DE9491150473B1BBE6AF433C121CD6 /* Client+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2562DD4839BF54461782A1463EBE1 /* Client+Fetch.swift */; };
+		3B03B97B9FB24EEC27011DA1C37D7137 /* FieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7423926A20288F908874CF7688C6AB4B /* FieldType.swift */; };
+		3BE30986418E03D5579ABF46A6DAFC06 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0ABD621A32D89FA64ED2A6188347C49 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DC580011D93AD76E63617B574FD2580 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		41A9811FC87EB4FE6432A719B26FB192 /* ArrayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE9716977D191C13EB24818DD292325 /* ArrayResponse.swift */; };
+		43A54233F814E5CABF71E1AD53CBDC1B /* Contentful-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77B5F62A5B4DB3EDC31426AD18DE53C6 /* Contentful-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43B902E94384A8827738B1DE6DA4E7E1 /* Pods-TreasureHuntingiOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC8896F6339BF6E5F185FA241741698 /* Pods-TreasureHuntingiOSTests-dummy.m */; };
+		51FED985B8C3D81D37501BC4832E4641 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D085386CA0FF2AE6DF4B0D1E2F791F96 /* Util.swift */; };
+		55E7EE73BCA6F467B2EDFC6429C7B8C4 /* ContentfulLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E975D2E76D4F921BD49F2AAE23356A /* ContentfulLogger.swift */; };
+		5C7FF5AF62F8F5ECAF3135BDCC5D179B /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AC1D07251A6895360A0B665FB56074 /* Resource.swift */; };
+		5F35B4AB1116FA31AEB61ADEBE74564F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		608A4E6F111E11D9932B9D699F57971F /* Client+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E0A5D63150633F0F96A8E97942FEA0 /* Client+Sync.swift */; };
+		73FF5BD6BB52F81F699FDCA1F1D19F14 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121FF1B44790389AFD684949FD402B4 /* Asset.swift */; };
+		75D5FC70390F537F1FA0C93EF31D67AD /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A7F0319EA17398EF04229A2C26D51 /* Date.swift */; };
+		87F63C7B382BE98439377AB1C8F540C0 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3ACF2E32295F88E5C8C1F097A97A05 /* Client.swift */; };
+		92A92CAE22D7E9EB2D63950547E6DBB4 /* QueryOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F892F25EEF64DA6E6F626D168D501765 /* QueryOperation.swift */; };
+		949C9B229FFBF7EE6610AB989D17E987 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EF18786C3B4A0AA4F939FD4231551C /* ContentType.swift */; };
+		9531B0B743B3236F3671355F56AB9032 /* DataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84C36C5367CF6E7A7BA8C448C156B68 /* DataCache.swift */; };
+		9AFD906A3AF37875C4F9A8196FC47B4F /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DD253466D272B7E34A8390490668C /* Entry.swift */; };
+		9DC80E1CB708078B2481579323D2412B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6428E12E43FD8950A92010BD02AFA83 /* Location.swift */; };
+		AD67341F2984D6AE107E3AE8F0BCAF5B /* JSONDecoderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB258ED1F181C7D86114F146DBDCEF76 /* JSONDecoderBuilder.swift */; };
+		ADFDBB8B006C60FB72763324E88EA3C2 /* TypedQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1529925A9CE941BD8788DF4BBA3DA6 /* TypedQuery.swift */; };
+		B61E58025F94CFBAEDC4F7E2173E3658 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA6EFA8937C6ACE440FD332A4C99A3 /* Error.swift */; };
+		B654AB0A829D278A444A131C5E79B272 /* Pods-TreasureHuntingiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EFA6CB5E0F163AAD9BC21D68E4EAB2 /* Pods-TreasureHuntingiOS-dummy.m */; };
+		B86D64D5E4021062B5D9F358BB085B92 /* SyncSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7A3B90474F37F077214E06971EED54 /* SyncSpace.swift */; };
+		DD369DB5B0977D05283E6B2B5EF6E934 /* RichText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A88D4BEC60FA3D3848CCE9B70BB8D2C /* RichText.swift */; };
+		DEA51D1EBA773A744EF2915998A6D775 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DF130B12F5024806674A52E1285B34E2 /* LinkResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B662CE3C3EF3CCEDE32AA582EDEF03A0 /* LinkResolver.swift */; };
+		DF51EEADDE946357C7BBB83011A23C0A /* Contentful-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5679FDFD621490672F075A0DF8F2F48D /* Contentful-dummy.m */; };
+		E7C88DF948DAB9C63C0E84542293AEE4 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C06EFFE3FC59F6D1AF5C735FE2DB30D /* Query.swift */; };
+		F566013C3C95B774F9D9003D2BF49499 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EACC8BE5836AC1E11967740A60983B /* Persistence.swift */; };
+		F9DD46D1EC7C91B4BB89EDDB227F009B /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DFF4B62798DF6FCF4B4A22DDE67DDF /* Field.swift */; };
+		FDF2E5A5A343B1A8591F7B95EAEB9828 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B94A876A449E982D3DB61234431AD /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-dummy.m */; };
+		FDFB2FA2A1C71ADC8DAC78404B4B7EC2 /* ClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D27789E440D9FAAD37305B742421D82 /* ClientConfiguration.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21ADD92195F24FE5EA13A627A3DCFE76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DE399435B4D2E6C6DBD2DEBB54B9845;
+			remoteInfo = "Pods-TreasureHuntingiOS";
+		};
+		5002EF0C57D5F245244AC238CA768188 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D7FD5275837E00363421054899B2918;
+			remoteInfo = Contentful;
+		};
+		64480C5AF35F3402396D898EE3AACA11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D7FD5275837E00363421054899B2918;
+			remoteInfo = Contentful;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0204F4B9D1E846AFDB80BB8B61B030C4 /* Pods-TreasureHuntingiOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TreasureHuntingiOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		09E975D2E76D4F921BD49F2AAE23356A /* ContentfulLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentfulLogger.swift; path = Sources/Contentful/ContentfulLogger.swift; sourceTree = "<group>"; };
+		0F160C5D6D1B7F3221BA3653A8761CC3 /* Endpoints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoints.swift; path = Sources/Contentful/Endpoints.swift; sourceTree = "<group>"; };
+		1121FF1B44790389AFD684949FD402B4 /* Asset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asset.swift; path = Sources/Contentful/Asset.swift; sourceTree = "<group>"; };
+		1D27789E440D9FAAD37305B742421D82 /* ClientConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientConfiguration.swift; path = Sources/Contentful/ClientConfiguration.swift; sourceTree = "<group>"; };
+		1F48A65DEC5D8C8A675787EFFBEC844D /* Pods_TreasureHuntingiOS_TreasureHuntingiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureHuntingiOS_TreasureHuntingiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2038F09452A6C18EF264BE94864259A8 /* Link.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Link.swift; path = Sources/Contentful/Link.swift; sourceTree = "<group>"; };
+		217F8BD46CD26D820B02ABA722DB1DDF /* Pods_TreasureHuntingiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureHuntingiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2181A69F9814341718E6E0DF4EB0FD4E /* Space.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Space.swift; path = Sources/Contentful/Space.swift; sourceTree = "<group>"; };
+		2A88D4BEC60FA3D3848CCE9B70BB8D2C /* RichText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RichText.swift; path = Sources/Contentful/RichText.swift; sourceTree = "<group>"; };
+		2C7A3B90474F37F077214E06971EED54 /* SyncSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyncSpace.swift; path = Sources/Contentful/SyncSpace.swift; sourceTree = "<group>"; };
+		3161D6BE1E7959FB75E8135FF04641AD /* Sys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sys.swift; path = Sources/Contentful/Sys.swift; sourceTree = "<group>"; };
+		36E0A5D63150633F0F96A8E97942FEA0 /* Client+Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Client+Sync.swift"; path = "Sources/Contentful/Client+Sync.swift"; sourceTree = "<group>"; };
+		3C06EFFE3FC59F6D1AF5C735FE2DB30D /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/Contentful/Query.swift; sourceTree = "<group>"; };
+		3C77E2BEA3B6F225CC6E0B4B1710C1A3 /* Pods-TreasureHuntingiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TreasureHuntingiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E0E6624A913BCE309B11AAFA41C5D9B /* ImageOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageOptions.swift; path = Sources/Contentful/ImageOptions/ImageOptions.swift; sourceTree = "<group>"; };
+		40141B4706391387A179544DD553F0C5 /* Pods-TreasureHuntingiOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TreasureHuntingiOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		42A4F7AD0E8CCB61DB8DFE413C277D9D /* Pods-TreasureHuntingiOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TreasureHuntingiOS-frameworks.sh"; sourceTree = "<group>"; };
+		4577B38B36C6D9642CF58D7687B932A2 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.modulemap"; sourceTree = "<group>"; };
+		4CBF4ECF6A9159835C1616106F4B490A /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DD2562DD4839BF54461782A1463EBE1 /* Client+Fetch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Client+Fetch.swift"; path = "Sources/Contentful/Client+Fetch.swift"; sourceTree = "<group>"; };
+		4EE26D4632DE17ACD87CAF776EB3D1A5 /* Client+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Client+UIKit.swift"; path = "Sources/Contentful/UIKit/Client+UIKit.swift"; sourceTree = "<group>"; };
+		4FC8896F6339BF6E5F185FA241741698 /* Pods-TreasureHuntingiOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TreasureHuntingiOSTests-dummy.m"; sourceTree = "<group>"; };
+		51DFF4B62798DF6FCF4B4A22DDE67DDF /* Field.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Field.swift; path = Sources/Contentful/Field.swift; sourceTree = "<group>"; };
+		532B0244511389E7137528781C63B62A /* Contentful-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Contentful-Info.plist"; sourceTree = "<group>"; };
+		5425DC20E4875F7CABE8AF740015F0E7 /* Pods-TreasureHuntingiOSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TreasureHuntingiOSTests-Info.plist"; sourceTree = "<group>"; };
+		5679FDFD621490672F075A0DF8F2F48D /* Contentful-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Contentful-dummy.m"; sourceTree = "<group>"; };
+		578882FAB5C8C7D0CD95B4B3DE4B4F5B /* Pods-TreasureHuntingiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TreasureHuntingiOS-Info.plist"; sourceTree = "<group>"; };
+		5A3B2C1CDCFC21F18909A70268646A37 /* Pods-TreasureHuntingiOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TreasureHuntingiOSTests-umbrella.h"; sourceTree = "<group>"; };
+		5C23FB9C95EC987082262B1724D5FA35 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-frameworks.sh"; sourceTree = "<group>"; };
+		5D63B59A0E0E855C103CA53A864D6139 /* Decodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decodable.swift; path = Sources/Contentful/Decodable.swift; sourceTree = "<group>"; };
+		6541A0BF8F8ECFB1BC32C65D5D82D70F /* Contentful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Contentful.debug.xcconfig; sourceTree = "<group>"; };
+		65EF18786C3B4A0AA4F939FD4231551C /* ContentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentType.swift; path = Sources/Contentful/ContentType.swift; sourceTree = "<group>"; };
+		6C9995B6A6128C01A1F433DD9B4735C0 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7297AE77C8FE74F044D4F0F74BFD1ACA /* Contentful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Contentful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7423926A20288F908874CF7688C6AB4B /* FieldType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldType.swift; path = Sources/Contentful/FieldType.swift; sourceTree = "<group>"; };
+		76E6A1B1CD9AC9784A7D2A1C5E43D6F3 /* Contentful-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Contentful-prefix.pch"; sourceTree = "<group>"; };
+		77B5F62A5B4DB3EDC31426AD18DE53C6 /* Contentful-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Contentful-umbrella.h"; sourceTree = "<group>"; };
+		7C5C0D491DBE606B6B54BAB0352EB48A /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-Info.plist"; sourceTree = "<group>"; };
+		81EACC8BE5836AC1E11967740A60983B /* Persistence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Persistence.swift; path = Sources/Contentful/Persistence.swift; sourceTree = "<group>"; };
+		8406BAB5183ADF50187858235C6BD8D0 /* Pods-TreasureHuntingiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TreasureHuntingiOS-umbrella.h"; sourceTree = "<group>"; };
+		8B806B29FF8EA04B4DA79A0E3221379B /* Pods-TreasureHuntingiOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TreasureHuntingiOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		8BBAA42E7ACCC1D80DE427DE34C4A94E /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C39B93E1F62D6EAF929AF33AFB0B6E7 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		90BA54D83515B0B73A7FABCB5994C40F /* Pods-TreasureHuntingiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TreasureHuntingiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		99AC1D07251A6895360A0B665FB56074 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Contentful/Resource.swift; sourceTree = "<group>"; };
+		9C3ACF2E32295F88E5C8C1F097A97A05 /* Client.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Sources/Contentful/Client.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3BFA386CA146E84A05553B2922F8A16 /* Pods-TreasureHuntingiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TreasureHuntingiOS.modulemap"; sourceTree = "<group>"; };
+		B114E3203EACBE28CEDC96CF9A33D045 /* Pods_TreasureHuntingiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureHuntingiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B662CE3C3EF3CCEDE32AA582EDEF03A0 /* LinkResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkResolver.swift; path = Sources/Contentful/LinkResolver.swift; sourceTree = "<group>"; };
+		B95B94A876A449E982D3DB61234431AD /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-dummy.m"; sourceTree = "<group>"; };
+		BBDA6EFA8937C6ACE440FD332A4C99A3 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Contentful/Error.swift; sourceTree = "<group>"; };
+		BDE9716977D191C13EB24818DD292325 /* ArrayResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayResponse.swift; path = Sources/Contentful/ArrayResponse.swift; sourceTree = "<group>"; };
+		C0BACE72AF8EBE1E973BF8951B07213B /* Pods-TreasureHuntingiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TreasureHuntingiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C2520DD3772DFD9E236170A3E85DA2E8 /* Pods-TreasureHuntingiOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TreasureHuntingiOSTests.modulemap"; sourceTree = "<group>"; };
+		CA1529925A9CE941BD8788DF4BBA3DA6 /* TypedQuery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypedQuery.swift; path = Sources/Contentful/TypedQuery.swift; sourceTree = "<group>"; };
+		CB1935088F8ABECFE2BB30C24EBF2D52 /* Contentful.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Contentful.modulemap; sourceTree = "<group>"; };
+		D085386CA0FF2AE6DF4B0D1E2F791F96 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = Sources/Contentful/Util.swift; sourceTree = "<group>"; };
+		D84C36C5367CF6E7A7BA8C448C156B68 /* DataCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataCache.swift; path = Sources/Contentful/DataCache.swift; sourceTree = "<group>"; };
+		DA1DD253466D272B7E34A8390490668C /* Entry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = Sources/Contentful/Entry.swift; sourceTree = "<group>"; };
+		DAACEE79467F7F422EDA8C9F980CC45D /* Pods-TreasureHuntingiOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TreasureHuntingiOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DB258ED1F181C7D86114F146DBDCEF76 /* JSONDecoderBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecoderBuilder.swift; path = Sources/Contentful/JSONDecoderBuilder.swift; sourceTree = "<group>"; };
+		E0ABD621A32D89FA64ED2A6188347C49 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-umbrella.h"; sourceTree = "<group>"; };
+		E68DB2DF43BC217026D75256F4BFE26B /* Contentful.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Contentful.release.xcconfig; sourceTree = "<group>"; };
+		EC5A7F0319EA17398EF04229A2C26D51 /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Sources/Contentful/Date.swift; sourceTree = "<group>"; };
+		F225EA45540FF961ADBA57F1A49DB47F /* Pods-TreasureHuntingiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TreasureHuntingiOS.release.xcconfig"; sourceTree = "<group>"; };
+		F6428E12E43FD8950A92010BD02AFA83 /* Location.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Sources/Contentful/Location.swift; sourceTree = "<group>"; };
+		F892F25EEF64DA6E6F626D168D501765 /* QueryOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryOperation.swift; path = Sources/Contentful/QueryOperation.swift; sourceTree = "<group>"; };
+		F9EFA6CB5E0F163AAD9BC21D68E4EAB2 /* Pods-TreasureHuntingiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TreasureHuntingiOS-dummy.m"; sourceTree = "<group>"; };
+		FA1EF189AA9FE60BF8D0772991241FAC /* Locale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locale.swift; path = Sources/Contentful/Locale.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D95DC9402C8C4D2F269CA1F3BFBCF6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC580011D93AD76E63617B574FD2580 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20A1F033E11B01AE87B3C7AB267B0919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA51D1EBA773A744EF2915998A6D775 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78792EDDA025774ABBC9BD347F8331EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C1E90A06DF952793BF984CF6FEE5B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA0522CA5FCBE66295F9560ADB6BE6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F35B4AB1116FA31AEB61ADEBE74564F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CB99DEE9ADD95DF163BA60A15658F7A /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4577B38B36C6D9642CF58D7687B932A2 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.modulemap */,
+				8BBAA42E7ACCC1D80DE427DE34C4A94E /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-acknowledgements.markdown */,
+				8C39B93E1F62D6EAF929AF33AFB0B6E7 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-acknowledgements.plist */,
+				B95B94A876A449E982D3DB61234431AD /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-dummy.m */,
+				5C23FB9C95EC987082262B1724D5FA35 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-frameworks.sh */,
+				7C5C0D491DBE606B6B54BAB0352EB48A /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-Info.plist */,
+				E0ABD621A32D89FA64ED2A6188347C49 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-umbrella.h */,
+				4CBF4ECF6A9159835C1616106F4B490A /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.debug.xcconfig */,
+				6C9995B6A6128C01A1F433DD9B4735C0 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.release.xcconfig */,
+			);
+			name = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests";
+			path = "Target Support Files/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests";
+			sourceTree = "<group>";
+		};
+		0EC5EC934C731F4E8E3ED787D560C078 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB1935088F8ABECFE2BB30C24EBF2D52 /* Contentful.modulemap */,
+				5679FDFD621490672F075A0DF8F2F48D /* Contentful-dummy.m */,
+				532B0244511389E7137528781C63B62A /* Contentful-Info.plist */,
+				76E6A1B1CD9AC9784A7D2A1C5E43D6F3 /* Contentful-prefix.pch */,
+				77B5F62A5B4DB3EDC31426AD18DE53C6 /* Contentful-umbrella.h */,
+				6541A0BF8F8ECFB1BC32C65D5D82D70F /* Contentful.debug.xcconfig */,
+				E68DB2DF43BC217026D75256F4BFE26B /* Contentful.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Contentful";
+			sourceTree = "<group>";
+		};
+		3AC456FC795FC81060BEA1C0E89CCE0A /* ImageOptions */ = {
+			isa = PBXGroup;
+			children = (
+				3E0E6624A913BCE309B11AAFA41C5D9B /* ImageOptions.swift */,
+			);
+			name = ImageOptions;
+			sourceTree = "<group>";
+		};
+		41F152D9B26A0D3AC40529E23CDB941D /* Pods-TreasureHuntingiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2520DD3772DFD9E236170A3E85DA2E8 /* Pods-TreasureHuntingiOSTests.modulemap */,
+				DAACEE79467F7F422EDA8C9F980CC45D /* Pods-TreasureHuntingiOSTests-acknowledgements.markdown */,
+				40141B4706391387A179544DD553F0C5 /* Pods-TreasureHuntingiOSTests-acknowledgements.plist */,
+				4FC8896F6339BF6E5F185FA241741698 /* Pods-TreasureHuntingiOSTests-dummy.m */,
+				5425DC20E4875F7CABE8AF740015F0E7 /* Pods-TreasureHuntingiOSTests-Info.plist */,
+				5A3B2C1CDCFC21F18909A70268646A37 /* Pods-TreasureHuntingiOSTests-umbrella.h */,
+				3C77E2BEA3B6F225CC6E0B4B1710C1A3 /* Pods-TreasureHuntingiOSTests.debug.xcconfig */,
+				90BA54D83515B0B73A7FABCB5994C40F /* Pods-TreasureHuntingiOSTests.release.xcconfig */,
+			);
+			name = "Pods-TreasureHuntingiOSTests";
+			path = "Target Support Files/Pods-TreasureHuntingiOSTests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5B817D20E1DE0D3C1955173C5F13630C /* Pods-TreasureHuntingiOS */ = {
+			isa = PBXGroup;
+			children = (
+				A3BFA386CA146E84A05553B2922F8A16 /* Pods-TreasureHuntingiOS.modulemap */,
+				0204F4B9D1E846AFDB80BB8B61B030C4 /* Pods-TreasureHuntingiOS-acknowledgements.markdown */,
+				8B806B29FF8EA04B4DA79A0E3221379B /* Pods-TreasureHuntingiOS-acknowledgements.plist */,
+				F9EFA6CB5E0F163AAD9BC21D68E4EAB2 /* Pods-TreasureHuntingiOS-dummy.m */,
+				42A4F7AD0E8CCB61DB8DFE413C277D9D /* Pods-TreasureHuntingiOS-frameworks.sh */,
+				578882FAB5C8C7D0CD95B4B3DE4B4F5B /* Pods-TreasureHuntingiOS-Info.plist */,
+				8406BAB5183ADF50187858235C6BD8D0 /* Pods-TreasureHuntingiOS-umbrella.h */,
+				C0BACE72AF8EBE1E973BF8951B07213B /* Pods-TreasureHuntingiOS.debug.xcconfig */,
+				F225EA45540FF961ADBA57F1A49DB47F /* Pods-TreasureHuntingiOS.release.xcconfig */,
+			);
+			name = "Pods-TreasureHuntingiOS";
+			path = "Target Support Files/Pods-TreasureHuntingiOS";
+			sourceTree = "<group>";
+		};
+		71C0DB243ED80C0AF0D08686D5B5830A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED35CBFBAF828F7E7C3A7349B499041E /* Contentful */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A6D86BDA7148C9DD83CEAE8D5262F527 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7297AE77C8FE74F044D4F0F74BFD1ACA /* Contentful.framework */,
+				B114E3203EACBE28CEDC96CF9A33D045 /* Pods_TreasureHuntingiOS.framework */,
+				1F48A65DEC5D8C8A675787EFFBEC844D /* Pods_TreasureHuntingiOS_TreasureHuntingiOSUITests.framework */,
+				217F8BD46CD26D820B02ABA722DB1DDF /* Pods_TreasureHuntingiOSTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF2EE63DEEAF3FB6D11892BFEC8D4B4A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B817D20E1DE0D3C1955173C5F13630C /* Pods-TreasureHuntingiOS */,
+				0CB99DEE9ADD95DF163BA60A15658F7A /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests */,
+				41F152D9B26A0D3AC40529E23CDB941D /* Pods-TreasureHuntingiOSTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				71C0DB243ED80C0AF0D08686D5B5830A /* Pods */,
+				A6D86BDA7148C9DD83CEAE8D5262F527 /* Products */,
+				AF2EE63DEEAF3FB6D11892BFEC8D4B4A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED35CBFBAF828F7E7C3A7349B499041E /* Contentful */ = {
+			isa = PBXGroup;
+			children = (
+				BDE9716977D191C13EB24818DD292325 /* ArrayResponse.swift */,
+				1121FF1B44790389AFD684949FD402B4 /* Asset.swift */,
+				9C3ACF2E32295F88E5C8C1F097A97A05 /* Client.swift */,
+				4DD2562DD4839BF54461782A1463EBE1 /* Client+Fetch.swift */,
+				36E0A5D63150633F0F96A8E97942FEA0 /* Client+Sync.swift */,
+				4EE26D4632DE17ACD87CAF776EB3D1A5 /* Client+UIKit.swift */,
+				1D27789E440D9FAAD37305B742421D82 /* ClientConfiguration.swift */,
+				09E975D2E76D4F921BD49F2AAE23356A /* ContentfulLogger.swift */,
+				65EF18786C3B4A0AA4F939FD4231551C /* ContentType.swift */,
+				D84C36C5367CF6E7A7BA8C448C156B68 /* DataCache.swift */,
+				EC5A7F0319EA17398EF04229A2C26D51 /* Date.swift */,
+				5D63B59A0E0E855C103CA53A864D6139 /* Decodable.swift */,
+				0F160C5D6D1B7F3221BA3653A8761CC3 /* Endpoints.swift */,
+				DA1DD253466D272B7E34A8390490668C /* Entry.swift */,
+				BBDA6EFA8937C6ACE440FD332A4C99A3 /* Error.swift */,
+				51DFF4B62798DF6FCF4B4A22DDE67DDF /* Field.swift */,
+				7423926A20288F908874CF7688C6AB4B /* FieldType.swift */,
+				DB258ED1F181C7D86114F146DBDCEF76 /* JSONDecoderBuilder.swift */,
+				2038F09452A6C18EF264BE94864259A8 /* Link.swift */,
+				B662CE3C3EF3CCEDE32AA582EDEF03A0 /* LinkResolver.swift */,
+				FA1EF189AA9FE60BF8D0772991241FAC /* Locale.swift */,
+				F6428E12E43FD8950A92010BD02AFA83 /* Location.swift */,
+				81EACC8BE5836AC1E11967740A60983B /* Persistence.swift */,
+				3C06EFFE3FC59F6D1AF5C735FE2DB30D /* Query.swift */,
+				F892F25EEF64DA6E6F626D168D501765 /* QueryOperation.swift */,
+				99AC1D07251A6895360A0B665FB56074 /* Resource.swift */,
+				2A88D4BEC60FA3D3848CCE9B70BB8D2C /* RichText.swift */,
+				2181A69F9814341718E6E0DF4EB0FD4E /* Space.swift */,
+				2C7A3B90474F37F077214E06971EED54 /* SyncSpace.swift */,
+				3161D6BE1E7959FB75E8135FF04641AD /* Sys.swift */,
+				CA1529925A9CE941BD8788DF4BBA3DA6 /* TypedQuery.swift */,
+				D085386CA0FF2AE6DF4B0D1E2F791F96 /* Util.swift */,
+				3AC456FC795FC81060BEA1C0E89CCE0A /* ImageOptions */,
+				0EC5EC934C731F4E8E3ED787D560C078 /* Support Files */,
+			);
+			path = Contentful;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		335FDE5F1A89C659BC8D965FC1030151 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE30986418E03D5579ABF46A6DAFC06 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60ED12265C0FF5A5F96F25B9A3DEDD2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A54233F814E5CABF71E1AD53CBDC1B /* Contentful-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09217D43BA3EBE204BDE0B6A4164B9A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38127240F89F0CC015E7EF32836F5735 /* Pods-TreasureHuntingiOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96ECA85727FF52A78E1F4C48469C525 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331CEE9F092F3E07CA71A2E82B6E19EF /* Pods-TreasureHuntingiOSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0D7FD5275837E00363421054899B2918 /* Contentful */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F99CFF13A13C8D842C7A92B26ADE464 /* Build configuration list for PBXNativeTarget "Contentful" */;
+			buildPhases = (
+				60ED12265C0FF5A5F96F25B9A3DEDD2D /* Headers */,
+				AD902923A8738787F207C42CC0C0B1A3 /* Sources */,
+				78792EDDA025774ABBC9BD347F8331EF /* Frameworks */,
+				0E7B34D230114859CA22F171C2A30B0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Contentful;
+			productName = Contentful;
+			productReference = 7297AE77C8FE74F044D4F0F74BFD1ACA /* Contentful.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		47657091AEC6326491DCA07D61D47903 /* Pods-TreasureHuntingiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 903485BC7B776419FA6B1F6A16C2556D /* Build configuration list for PBXNativeTarget "Pods-TreasureHuntingiOSTests" */;
+			buildPhases = (
+				D96ECA85727FF52A78E1F4C48469C525 /* Headers */,
+				C9E9FE3C0B5E11EA3BC639CC758D4417 /* Sources */,
+				EBA0522CA5FCBE66295F9560ADB6BE6F /* Frameworks */,
+				7BD8B3FAAEBD6AB98174C0A63152A4CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A329A25310F25E5FA1C98BF030607BF /* PBXTargetDependency */,
+			);
+			name = "Pods-TreasureHuntingiOSTests";
+			productName = "Pods-TreasureHuntingiOSTests";
+			productReference = 217F8BD46CD26D820B02ABA722DB1DDF /* Pods_TreasureHuntingiOSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4DE399435B4D2E6C6DBD2DEBB54B9845 /* Pods-TreasureHuntingiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC330C985897F0CD516A3D3C10FE27E4 /* Build configuration list for PBXNativeTarget "Pods-TreasureHuntingiOS" */;
+			buildPhases = (
+				A09217D43BA3EBE204BDE0B6A4164B9A /* Headers */,
+				4A867B5D977A8748F2573EC5A5740CBB /* Sources */,
+				20A1F033E11B01AE87B3C7AB267B0919 /* Frameworks */,
+				33505B9279DA50E91D1DDB5DB7D56EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CC2F0751A979FD7997C0265D714BB19 /* PBXTargetDependency */,
+			);
+			name = "Pods-TreasureHuntingiOS";
+			productName = "Pods-TreasureHuntingiOS";
+			productReference = B114E3203EACBE28CEDC96CF9A33D045 /* Pods_TreasureHuntingiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6AF7FAC77DAB3D3C2FEFAB245C988B1F /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 318B59D6DA753DF019A320C0AB8C1F3A /* Build configuration list for PBXNativeTarget "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests" */;
+			buildPhases = (
+				335FDE5F1A89C659BC8D965FC1030151 /* Headers */,
+				DD0E7D27DCE79CCF27ADBC013227D2F3 /* Sources */,
+				0D95DC9402C8C4D2F269CA1F3BFBCF6F /* Frameworks */,
+				4F905A127FCDEA3F59286D5854D147FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				063B99157B3A34B526FEA84488F8CE1A /* PBXTargetDependency */,
+			);
+			name = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests";
+			productName = "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests";
+			productReference = 1F48A65DEC5D8C8A675787EFFBEC844D /* Pods_TreasureHuntingiOS_TreasureHuntingiOSUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A6D86BDA7148C9DD83CEAE8D5262F527 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D7FD5275837E00363421054899B2918 /* Contentful */,
+				4DE399435B4D2E6C6DBD2DEBB54B9845 /* Pods-TreasureHuntingiOS */,
+				6AF7FAC77DAB3D3C2FEFAB245C988B1F /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests */,
+				47657091AEC6326491DCA07D61D47903 /* Pods-TreasureHuntingiOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E7B34D230114859CA22F171C2A30B0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33505B9279DA50E91D1DDB5DB7D56EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F905A127FCDEA3F59286D5854D147FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD8B3FAAEBD6AB98174C0A63152A4CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A867B5D977A8748F2573EC5A5740CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B654AB0A829D278A444A131C5E79B272 /* Pods-TreasureHuntingiOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD902923A8738787F207C42CC0C0B1A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A9811FC87EB4FE6432A719B26FB192 /* ArrayResponse.swift in Sources */,
+				73FF5BD6BB52F81F699FDCA1F1D19F14 /* Asset.swift in Sources */,
+				38DE9491150473B1BBE6AF433C121CD6 /* Client+Fetch.swift in Sources */,
+				608A4E6F111E11D9932B9D699F57971F /* Client+Sync.swift in Sources */,
+				187064D913229C31858196C89E0741C9 /* Client+UIKit.swift in Sources */,
+				87F63C7B382BE98439377AB1C8F540C0 /* Client.swift in Sources */,
+				FDFB2FA2A1C71ADC8DAC78404B4B7EC2 /* ClientConfiguration.swift in Sources */,
+				DF51EEADDE946357C7BBB83011A23C0A /* Contentful-dummy.m in Sources */,
+				55E7EE73BCA6F467B2EDFC6429C7B8C4 /* ContentfulLogger.swift in Sources */,
+				949C9B229FFBF7EE6610AB989D17E987 /* ContentType.swift in Sources */,
+				9531B0B743B3236F3671355F56AB9032 /* DataCache.swift in Sources */,
+				75D5FC70390F537F1FA0C93EF31D67AD /* Date.swift in Sources */,
+				165A69FCC84B62531CDAE3AAF1C10BFD /* Decodable.swift in Sources */,
+				35C62640473E94D1CEBEF6F68C4718D2 /* Endpoints.swift in Sources */,
+				9AFD906A3AF37875C4F9A8196FC47B4F /* Entry.swift in Sources */,
+				B61E58025F94CFBAEDC4F7E2173E3658 /* Error.swift in Sources */,
+				F9DD46D1EC7C91B4BB89EDDB227F009B /* Field.swift in Sources */,
+				3B03B97B9FB24EEC27011DA1C37D7137 /* FieldType.swift in Sources */,
+				2C24C69D58042739B4678AA1D1C7D84D /* ImageOptions.swift in Sources */,
+				AD67341F2984D6AE107E3AE8F0BCAF5B /* JSONDecoderBuilder.swift in Sources */,
+				16878C242D620BC5A9778DFC1413B1A8 /* Link.swift in Sources */,
+				DF130B12F5024806674A52E1285B34E2 /* LinkResolver.swift in Sources */,
+				208999C6908BEFA28E04931D549FB3B4 /* Locale.swift in Sources */,
+				9DC80E1CB708078B2481579323D2412B /* Location.swift in Sources */,
+				F566013C3C95B774F9D9003D2BF49499 /* Persistence.swift in Sources */,
+				E7C88DF948DAB9C63C0E84542293AEE4 /* Query.swift in Sources */,
+				92A92CAE22D7E9EB2D63950547E6DBB4 /* QueryOperation.swift in Sources */,
+				5C7FF5AF62F8F5ECAF3135BDCC5D179B /* Resource.swift in Sources */,
+				DD369DB5B0977D05283E6B2B5EF6E934 /* RichText.swift in Sources */,
+				206DCC8FB4F8F8A2EF147AAAB3A4E59D /* Space.swift in Sources */,
+				B86D64D5E4021062B5D9F358BB085B92 /* SyncSpace.swift in Sources */,
+				3774874F5E0720743FE2F9EFC6242804 /* Sys.swift in Sources */,
+				ADFDBB8B006C60FB72763324E88EA3C2 /* TypedQuery.swift in Sources */,
+				51FED985B8C3D81D37501BC4832E4641 /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E9FE3C0B5E11EA3BC639CC758D4417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B902E94384A8827738B1DE6DA4E7E1 /* Pods-TreasureHuntingiOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0E7D27DCE79CCF27ADBC013227D2F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF2E5A5A343B1A8591F7B95EAEB9828 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		063B99157B3A34B526FEA84488F8CE1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Contentful;
+			target = 0D7FD5275837E00363421054899B2918 /* Contentful */;
+			targetProxy = 5002EF0C57D5F245244AC238CA768188 /* PBXContainerItemProxy */;
+		};
+		3CC2F0751A979FD7997C0265D714BB19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Contentful;
+			target = 0D7FD5275837E00363421054899B2918 /* Contentful */;
+			targetProxy = 64480C5AF35F3402396D898EE3AACA11 /* PBXContainerItemProxy */;
+		};
+		7A329A25310F25E5FA1C98BF030607BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TreasureHuntingiOS";
+			target = 4DE399435B4D2E6C6DBD2DEBB54B9845 /* Pods-TreasureHuntingiOS */;
+			targetProxy = 21ADD92195F24FE5EA13A627A3DCFE76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D688D3762783B1F904EF939E7F9DD61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C9995B6A6128C01A1F433DD9B4735C0 /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4B9F47BBC4DAE74270FAF3B91E9718ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68DB2DF43BC217026D75256F4BFE26B /* Contentful.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Contentful/Contentful-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Contentful/Contentful-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Contentful/Contentful.modulemap";
+				PRODUCT_MODULE_NAME = Contentful;
+				PRODUCT_NAME = Contentful;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		61B6CF2D62A772CF96C672152763DAA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CBF4ECF6A9159835C1616106F4B490A /* Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests/Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A7BDFF12D77B64F7A5347658DA435AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C77E2BEA3B6F225CC6E0B4B1710C1A3 /* Pods-TreasureHuntingiOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TreasureHuntingiOSTests/Pods-TreasureHuntingiOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TreasureHuntingiOSTests/Pods-TreasureHuntingiOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E6913866773622278F0E731C9B01DD4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0BACE72AF8EBE1E973BF8951B07213B /* Pods-TreasureHuntingiOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TreasureHuntingiOS/Pods-TreasureHuntingiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TreasureHuntingiOS/Pods-TreasureHuntingiOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB341121F1F14276F3F172DD07001C8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F225EA45540FF961ADBA57F1A49DB47F /* Pods-TreasureHuntingiOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TreasureHuntingiOS/Pods-TreasureHuntingiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TreasureHuntingiOS/Pods-TreasureHuntingiOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F400995F8CDD2EB9E1E5E2A270A7D9B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6541A0BF8F8ECFB1BC32C65D5D82D70F /* Contentful.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Contentful/Contentful-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Contentful/Contentful-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Contentful/Contentful.modulemap";
+				PRODUCT_MODULE_NAME = Contentful;
+				PRODUCT_NAME = Contentful;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FBE96F94B46BDAD8C4185FBBA823CB3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90BA54D83515B0B73A7FABCB5994C40F /* Pods-TreasureHuntingiOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TreasureHuntingiOSTests/Pods-TreasureHuntingiOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TreasureHuntingiOSTests/Pods-TreasureHuntingiOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F99CFF13A13C8D842C7A92B26ADE464 /* Build configuration list for PBXNativeTarget "Contentful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F400995F8CDD2EB9E1E5E2A270A7D9B5 /* Debug */,
+				4B9F47BBC4DAE74270FAF3B91E9718ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		318B59D6DA753DF019A320C0AB8C1F3A /* Build configuration list for PBXNativeTarget "Pods-TreasureHuntingiOS-TreasureHuntingiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61B6CF2D62A772CF96C672152763DAA1 /* Debug */,
+				1D688D3762783B1F904EF939E7F9DD61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		903485BC7B776419FA6B1F6A16C2556D /* Build configuration list for PBXNativeTarget "Pods-TreasureHuntingiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7BDFF12D77B64F7A5347658DA435AD1 /* Debug */,
+				FBE96F94B46BDAD8C4185FBBA823CB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC330C985897F0CD516A3D3C10FE27E4 /* Build configuration list for PBXNativeTarget "Pods-TreasureHuntingiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6913866773622278F0E731C9B01DD4E /* Debug */,
+				EB341121F1F14276F3F172DD07001C8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -7,17 +7,36 @@
 //
 
 import Foundation
+import Contentful
 
-class Attachment {
+final class Attachment: EntryDecodable, FieldKeysQueryable {
+    static var contentTypeId: ContentTypeId {
+        return "attachment"
+    }
+    enum FieldKeys: String, CodingKey {
+        case name, path, mimeType, isPrintable
+    }
+    var id: String
+    var updatedAt: Date?
+    var createdAt: Date?
+    var localeCode: String?
     var name: String
     var path: String
     var mimeType: String
-    var inPrintable: Bool
+    var isPrintable: Bool
+    
+    public required init(from decoder: Decoder) throws {
+        let sys         = try decoder.sys()
+        id              = sys.id
+        localeCode      = sys.locale
+        updatedAt       = sys.updatedAt
+        createdAt       = sys.createdAt
 
-    init(name: String, path: String, mimeType: String, isPrintable: Bool) {
-        self.name = name
-        self.path = path
-        self.mimeType = mimeType
-        self.inPrintable = isPrintable
+        let fields = try decoder.contentfulFieldsContainer(keyedBy: Attachment.FieldKeys.self)
+
+        self.name = try fields.decodeIfPresent(String.self, forKey: .name) ?? ""
+        self.path = try fields.decodeIfPresent(String.self, forKey: .path) ?? ""
+        self.mimeType = try fields.decodeIfPresent(String.self, forKey: .mimeType) ?? ""
+        self.isPrintable = try fields.decodeIfPresent(Bool.self, forKey: .isPrintable) ?? false
     }
 }

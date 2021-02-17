@@ -24,7 +24,6 @@
 		BC65332724F145D00037B96B /* TreasureHuntingiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65332624F145D00037B96B /* TreasureHuntingiOSUITests.swift */; };
 		BC65333624F14CB70037B96B /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65333524F14CB70037B96B /* Attachment.swift */; };
 		BC65333824F14CC30037B96B /* Hunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65333724F14CC30037B96B /* Hunt.swift */; };
-		BC65333A24F14CFB0037B96B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65333924F14CFB0037B96B /* Location.swift */; };
 		BC65333C24F14D070037B96B /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65333B24F14D070037B96B /* Stage.swift */; };
 		BC65333E24F14D170037B96B /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65333D24F14D170037B96B /* Summary.swift */; };
 		BC65334124F14D970037B96B /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC65334024F14D970037B96B /* JSONParser.swift */; };
@@ -90,7 +89,6 @@
 		BC65332824F145D00037B96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC65333524F14CB70037B96B /* Attachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attachment.swift; sourceTree = "<group>"; };
 		BC65333724F14CC30037B96B /* Hunt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hunt.swift; sourceTree = "<group>"; };
-		BC65333924F14CFB0037B96B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		BC65333B24F14D070037B96B /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
 		BC65333D24F14D170037B96B /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
 		BC65334024F14D970037B96B /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
@@ -257,7 +255,6 @@
 			children = (
 				BC65333524F14CB70037B96B /* Attachment.swift */,
 				BC65333724F14CC30037B96B /* Hunt.swift */,
-				BC65333924F14CFB0037B96B /* Location.swift */,
 				BC65333B24F14D070037B96B /* Stage.swift */,
 				BC65333D24F14D170037B96B /* Summary.swift */,
 			);
@@ -658,7 +655,6 @@
 				BCF397ED24FFEC8D00F78D1B /* Logger.swift in Sources */,
 				BCDD840B255C49830053DCF0 /* GenericAttachmentsCell.swift in Sources */,
 				BC65333824F14CC30037B96B /* Hunt.swift in Sources */,
-				BC65333A24F14CFB0037B96B /* Location.swift in Sources */,
 				BC65333E24F14D170037B96B /* Summary.swift in Sources */,
 				BC65330724F145CE0037B96B /* SceneDelegate.swift in Sources */,
 				BCA212912504293A00A7BBF3 /* HuntTableViewController.swift in Sources */,

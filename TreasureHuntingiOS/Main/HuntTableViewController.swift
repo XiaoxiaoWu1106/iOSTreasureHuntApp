@@ -30,9 +30,13 @@ class HuntTableViewController: UIViewController, UITableViewDelegate, UITableVie
 
     fileprivate func initData() {
         dataSection.removeAll()
-
-        tableView.reloadData()
         tableView.hideEmptyCells()
+        ContentfulManager.shared.getHunts { (resultItems, _) in
+            self.dataSection.append(contentsOf: resultItems ?? [])
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 
     // MARK: - Table view data source

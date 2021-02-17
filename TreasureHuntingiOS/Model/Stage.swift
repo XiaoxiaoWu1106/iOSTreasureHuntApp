@@ -15,7 +15,8 @@ final class Stage: EntryDecodable, FieldKeysQueryable {
     }
     enum FieldKeys: String, CodingKey {
         case title, description, objective, validation
-        case correctValidationValue, clues, timeLimit
+        case correctValidationValue, clues, timeLimit, geolocation
+        case attachments
     }
 
     // must have
@@ -53,8 +54,13 @@ final class Stage: EntryDecodable, FieldKeysQueryable {
         self.description = try fields.decodeIfPresent(String.self, forKey: .description) ?? ""
         self.objective = try fields.decodeIfPresent(String.self, forKey: .objective) ?? ""
         self.validation = try fields.decodeIfPresent(String.self, forKey: .validation) ?? ""
+        self.location = try fields.decodeIfPresent(Location.self, forKey: .geolocation)
         self.correctValidationValue = try fields.decodeIfPresent(String.self, forKey: .correctValidationValue) ?? ""
         self.clues = try fields.decodeIfPresent(Array<String>.self, forKey: .clues)
         self.timeLimitInMin = try fields.decodeIfPresent(Int.self, forKey: .timeLimit) ?? 0
+        
+        try fields.resolveLinksArray(forKey: .attachments, decoder: decoder) { [weak self] attachments in
+            self?.attachments = attachments as? [Attachment] ?? []
+        }
     }
 }

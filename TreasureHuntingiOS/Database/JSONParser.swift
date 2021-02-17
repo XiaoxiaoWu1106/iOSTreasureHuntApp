@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Contentful
 typealias JsonObject = [String: Any]
 
 class JSONParser {
@@ -58,7 +59,7 @@ class JSONParser {
                 Logger.error("JsonParser.parseLocation -> wrong values for location")
                 return nil
         }
-        return Location(lon: lon, lat: lat)
+        return Location(latitude: lat, longitude: lon)
     }
 
     func parseStages(stages: [[String: Any]]) -> [Stage] {
@@ -72,9 +73,9 @@ class JSONParser {
                 let path = attachment["path"] as? String,
                 let mimeType = attachment["mime_type"] as? String,
                 let isPrintable = attachment["is_printable"] as? Bool {
-                let newAttachment = Attachment(name: name, path: path,
-                                                    mimeType: mimeType, isPrintable: isPrintable)
-                attachmentArray.append(newAttachment)
+//                let newAttachment = Attachment(name: name, path: path,
+//                                                    mimeType: mimeType, isPrintable: isPrintable)
+//                attachmentArray.append(newAttachment)
             }
         }
         return attachmentArray

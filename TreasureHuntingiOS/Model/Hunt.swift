@@ -65,12 +65,12 @@ final class Hunt: EntryDecodable, FieldKeysQueryable {
         self.author                = try fields.decodeIfPresent(String.self, forKey: .author) ?? ""
         self.isCompatitive         = try fields.decodeIfPresent(Bool.self, forKey: .isCompetitive) ?? false
         self.ageRequired           = try fields.decodeIfPresent(Int.self, forKey: .requiredAge) ?? 0
+        self.location           = try fields.decodeIfPresent(Location.self, forKey: .initialLocation)
         self.timeLimitInMin        = try fields.decodeIfPresent(Int.self, forKey: .timeLimitInMin) ?? 0
         self.fitnessLevel          = try fields.decodeIfPresent(Int.self, forKey: .fitnessLevel) ?? 0
         self.equipmentDescription  = try fields.decodeIfPresent(String.self, forKey: .equipmentDescription) ?? ""
         self.requiredEquipment     = try fields.decodeIfPresent(Array<String>.self, forKey: .requiredEquipment) ?? []
-        try fields.resolveLinksArray(forKey: .stages, decoder: decoder) { [weak self]
-                stages in
+        try fields.resolveLinksArray(forKey: .stages, decoder: decoder) { [weak self] stages in
             self?.stages = stages as? [Stage] ?? []
         }
     }

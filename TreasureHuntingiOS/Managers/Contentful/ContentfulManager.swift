@@ -18,9 +18,22 @@ class ContentfulManager {
     }
 
     func getHunts(completion: @escaping ([Hunt]?, Error?) -> Void) {
+        let query = QueryOn<Hunt>.include(1)
+    
+        client.fetchArray(of: Hunt.self, matching: query) { result in
+            switch result {
+            case .success(let response):
+                completion(response.items, nil)
+            case .failure(let error):
+                completion(nil, error)
+            }
+        }
+    }
+    
+    func getStages(completion: @escaping ([Stage]?, Error?) -> Void) {
 //        let query = QueryOn<Hunt>.where(field: .title, .equals("Test"))
 
-        client.fetchArray(of: Hunt.self) { result in
+        client.fetchArray(of: Stage.self) { result in
             switch result {
             case .success(let response):
                 completion(response.items, nil)
